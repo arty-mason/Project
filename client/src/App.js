@@ -1,7 +1,18 @@
+import React from 'react';
+
+import { Routes, Route } from "react-router-dom";
+
+import Signin from "./components/Signin";
+import Signup from "./components/Signin";
+import Account from "./components/Account";
 
 function App() {
   return (
-    <div>Hello World</div>
+    <Routes>
+      <Route path="/" element={<Signin />} />
+      <Route path="/" element={<Signup />} />
+      <Route path="/" element={<Account />} />
+    </Routes>
   );
 }
 
