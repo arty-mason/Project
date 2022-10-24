@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 import { Input } from "../services/authInput";
+import CustomizedSwitches from "../config/ThemeSwitcher";
 
 const Signup = () => {
   return (
@@ -59,6 +60,7 @@ const Signup = () => {
         >
           Sign Up
         </Button>
+        <CustomizedSwitches />
       </Box>
     </Box>
   );
