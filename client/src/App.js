@@ -8,16 +8,21 @@ import { theme } from "./config/theme"
 
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
-import Account from "./components/Account";
+import Home from "./pages/Home";
+
+import { AuthContextProvider } from './context/AuthContext';
+
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Routes>
-        <Route path="/" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/account" element={<Account />} />
-      </Routes>
+      <AuthContextProvider>
+        <Routes>
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </AuthContextProvider>
     </ThemeProvider>
   );
 }

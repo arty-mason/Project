@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
+
+import { UserAuth } from "../context/AuthContext";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -10,6 +12,23 @@ import { Input } from "../services/authInput";
 import CustomizedSwitches from "../config/ThemeSwitcher";
 
 const Signup = () => {
+  const [login, setLogin] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const { createUser } = UserAuth();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    try {
+      await createUser(login, password);
+    } catch (e) {
+      setError(e.message);
+      console.log(e.message);
+    }
+  };
+
   return (
     <Box
       sx={{
@@ -39,20 +58,21 @@ const Signup = () => {
       >
         <Input
           label="Enter your email or login"
-          type="email"
           required
           autoComplete="off"
+          onChange={(e) => setLogin(e.target.value)}
         />
         <Input
           label="Enter your password"
           type="password"
           required
           autoComplete="off"
+          onChange={(e) => setPassword(e.target.value)}
         />
         <Button
           variant="contained"
           type="submit"
-          onSubmit={() => console.log("Submitted")}
+          onSubmit={handleSubmit}
           sx={{
             width: "100px",
             height: "40px",
