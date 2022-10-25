@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 import Feed from "../components/Feed";
 import TagCloud from "../components/TagCloud";
+import LatestItems from "../components/LatestItems";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
           <Link to="/signin">Sign in</Link>
         </Typography>
       </Box>
+      <LatestItems />
       <Feed />
       <TagCloud />
     </Box>
