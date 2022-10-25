@@ -29,7 +29,6 @@ const Feed = () => {
       {mockData.map((data) => {
         return (
           <Card
-            outlined
             key={data.id}
             sx={{
               margin: 5,

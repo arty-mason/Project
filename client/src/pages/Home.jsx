@@ -10,7 +10,7 @@ const Home = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        mt: "50px",
+        /*     mt: "100px", */
       }}
     >
       <Typography variant="h3" component="h1" textAlign="center">
@@ -18,11 +18,11 @@ const Home = () => {
       </Typography>
       <Feed />
       <Box>
-        <Typography textAlign="center">
+        <Typography textAlign="center" variant="h4" component="p">
           Want to create your own collection on our website? &nbsp;
           <Link to="/signup">Sign up</Link>
         </Typography>
-        <Typography textAlign="center">
+        <Typography textAlign="center" variant="h4" component="p">
           Already have an account? &nbsp;
           <Link to="/signin">Sign in</Link>
         </Typography>
