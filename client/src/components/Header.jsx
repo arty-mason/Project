@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+import { theme } from "../config/theme";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -60,7 +61,7 @@ const Header = () => {
         position: "fixed",
         width: "100%",
         zIndex: 10,
-        backgroundColor: "#2a3eb1",
+        backgroundColor: theme.palette.primary.main,
       }}
     >
       <Toolbar>

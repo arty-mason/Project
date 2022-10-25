@@ -1,6 +1,7 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import React from "react";
+import { theme } from "../config/theme";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
         bottom: 0,
         width: "100%",
         height: "100px",
-        backgroundColor: "#2a3eb1",
+        backgroundColor: theme.palette.primary.main,
         zIndex: 10,
       }}
     >

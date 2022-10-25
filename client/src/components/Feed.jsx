@@ -1,39 +1,59 @@
 import React from "react";
 
-import { Favorite, FavoriteBorder, MoreVert, Share } from "@mui/icons-material";
+import { Favorite, FavoriteBorder, Share } from "@mui/icons-material";
 
 import {
   Avatar,
   Box,
-  Card,
   CardActions,
   CardContent,
   CardHeader,
   CardMedia,
   Checkbox,
+  Grid,
   IconButton,
   Typography,
 } from "@mui/material";
+
+import { theme } from "../config/theme";
 
 import mockData from "../services/collection-data";
 
 const Feed = () => {
   return (
-    <Box
+    <Grid
+      container
+      spacing={1}
       sx={{
-        display: "flex",
-        flexDirection: "column",
+        flexDirection: { md: "row", xs: "column" },
+        justifyContent: "space-evenly",
         alignItems: "center",
       }}
     >
       {mockData.map((data) => {
         return (
-          <Card
+          <Grid
             key={data.id}
+            item
+            lg={2}
+            md={4}
+            sm={4}
+            xs={6}
             sx={{
-              margin: 5,
-              width: "350px",
-              border: "1px solid gray",
+              my: "50px",
+              height: {
+                xl: "500px",
+                lg: "400px",
+                md: "350px",
+                sm: "300px",
+                xs: "250px",
+              },
+              border: `1px solid ${theme.palette.primary.dark}`,
+              display: "flex",
+              flexWrap: "wrap",
+              flexDirection: "column",
+              justifyContent: "space-evenly",
+              alignItems: "center",
             }}
           >
             <CardHeader
@@ -48,34 +68,64 @@ const Feed = () => {
                   </Avatar>
                 )
               }
-              action={
-                <IconButton aria-label="settings">
-                  <MoreVert />
-                </IconButton>
-              }
               title={data.author}
               subheader={data.date}
             />
+            <Typography variant="p" color="text.secondary">
+              Item: {data.item} <br></br>
+              Collection: {data.collection}
+            </Typography>
             <CardContent>
-              <Typography variant="p" color="text.secondary">
-                Item: {data.item} <br></br>
-                Collection: {data.collection}
-              </Typography>
+              {data.img ? (
+                <CardMedia
+                  component="img"
+                  sx={{
+                    border: "1px solid",
+                    height: {
+                      xl: "250px",
+                      lg: "200px",
+                      md: "325px",
+                      sm: "250px",
+                      xs: "100px",
+                    },
+                    width: {
+                      xl: "200px",
+                      lg: "200px",
+                      md: "325px",
+                      sm: "250px",
+                      xs: "100px",
+                    },
+                  }}
+                  image={data.img}
+                  alt={data.item}
+                />
+              ) : (
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    border: "1px solid",
+                    height: {
+                      xl: "250px",
+                      lg: "200px",
+                      md: "325px",
+                      sm: "250px",
+                      xs: "100px",
+                    },
+                    width: {
+                      xl: "200px",
+                      lg: "200px",
+                      md: "325px",
+                      sm: "250px",
+                      xs: "100px",
+                    },
+                  }}
+                >
+                  <Typography textAlign="center">No image available</Typography>
+                </Box>
+              )}
             </CardContent>
-            {data.img ? (
-              <CardMedia
-                component="img"
-                sx={{
-                  height: "500px",
-                  width: "350px",
-                }}
-                image={data.img}
-                alt={data.item}
-              />
-            ) : (
-              <Typography textAlign="center">No image available</Typography>
-            )}
-
             <CardActions disableSpacing>
               <IconButton aria-label="add to favorites">
                 <Checkbox
@@ -87,10 +137,10 @@ const Feed = () => {
                 <Share />
               </IconButton>
             </CardActions>
-          </Card>
+          </Grid>
         );
       })}
-    </Box>
+    </Grid>
   );
 };
 

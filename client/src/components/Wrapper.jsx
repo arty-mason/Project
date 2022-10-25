@@ -11,6 +11,7 @@ const Wrapper = (props) => {
         flexDirection: "column",
         height: "100%",
         justifyContent: "space-between",
+        backgroundColor: "#f3e5f5",
       }}
     >
       <Box>
