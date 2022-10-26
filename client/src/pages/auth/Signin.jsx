@@ -22,6 +22,7 @@ const Signin = () => {
   const handleLogin = async (event) => {
     event.preventDefault();
     setError("");
+    console.log(error);
     try {
       await signIn(login, password);
       navigate("/user");
