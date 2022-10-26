@@ -6,8 +6,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-import { Input } from "../services/authInput";
-import CustomizedSwitches from "../config/ThemeSwitcher";
+import { Input } from "../../services/authInput";
 
 const Signin = () => {
   return (
@@ -17,6 +16,7 @@ const Signin = () => {
         flexDirection: "column",
         alignItems: "center",
         maxWidth: "700px",
+        height: "60vh",
         mx: "auto",
         my: 16,
         p: 4,
@@ -60,7 +60,6 @@ const Signin = () => {
         >
           Sign In
         </Button>
-        <CustomizedSwitches />
       </Box>
     </Box>
   );

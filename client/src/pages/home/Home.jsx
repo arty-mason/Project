@@ -3,9 +3,9 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
 
-import Feed from "../components/Feed";
-import TagCloud from "../components/TagCloud";
-import LatestItems from "../components/LatestItems";
+import Feed from "../../components/Feed";
+import TagCloud from "../../components/TagCloud";
+import LatestItems from "../../components/LatestItems";
 
 const Home = () => {
   return (

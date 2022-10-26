@@ -2,14 +2,13 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-import { UserAuth } from "../context/AuthContext";
+import { UserAuth } from "../../context/AuthContext";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-import { Input } from "../services/authInput";
-import CustomizedSwitches from "../config/ThemeSwitcher";
+import { Input } from "../../services/authInput";
 
 const Signup = () => {
   const [login, setLogin] = useState("");
@@ -36,6 +35,7 @@ const Signup = () => {
         flexDirection: "column",
         alignItems: "center",
         maxWidth: "700px",
+        height: "60vh",
         mx: "auto",
         my: 16,
         p: 4,
@@ -80,7 +80,6 @@ const Signup = () => {
         >
           Sign Up
         </Button>
-        <CustomizedSwitches />
       </Box>
     </Box>
   );

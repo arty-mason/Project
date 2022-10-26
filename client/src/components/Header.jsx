@@ -8,6 +8,8 @@ import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import { theme } from "../config/theme";
+import CustomizedSwitches from "../config/ThemeSwitcher";
+import { Link } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -74,6 +76,7 @@ const Header = () => {
         >
           <MenuIcon />
         </IconButton>
+        <CustomizedSwitches />
         <Typography
           variant="h6"
           noWrap
@@ -82,9 +85,10 @@ const Header = () => {
             flexGrow: 1,
             display: { xs: "none", sm: "block" },
             textAlign: "center",
+            textDecoration: "none",
           }}
         >
-          Collections library
+          <Link to="/"> Collections library</Link>
         </Typography>
         <Search>
           <SearchIconWrapper>

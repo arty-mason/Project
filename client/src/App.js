@@ -6,9 +6,10 @@ import { theme } from "./config/theme"
 import { AuthContextProvider } from './context/AuthContext';
 
 /// PAGES
-import Signin from "./components/Signin";
-import Signup from "./components/Signup";
-import Home from "./pages/Home";
+import Signin from "./pages/auth/Signin";
+import Signup from "./pages/auth/Signup";
+import Home from "./pages/home/Home";
+import Admin from "./pages/admin/Admin"
 
 /// STATIC COMPONENTS
 import Wrapper from "./components/Wrapper";
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/admin" element={<Admin />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </Wrapper>
