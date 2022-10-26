@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-import { UserAuth } from "../../context/AuthContext";
+import { useUserAuth } from "../../context/AuthContext";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -15,7 +15,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const { createUser } = UserAuth();
+  const { createUser } = useUserAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -72,7 +72,7 @@ const Signup = () => {
         <Button
           variant="contained"
           type="submit"
-          onSubmit={handleSubmit}
+          onClick={handleSubmit}
           sx={{
             width: "100px",
             height: "40px",

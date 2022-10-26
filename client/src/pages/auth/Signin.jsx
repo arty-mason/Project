@@ -52,7 +52,7 @@ const Signin = () => {
         <Button
           variant="contained"
           type="submit"
-          onSubmit={() => console.log("Submitted")}
+          onClick={() => console.log("Submitted")}
           sx={{
             width: "100px",
             height: "40px",
