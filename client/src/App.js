@@ -17,7 +17,6 @@ import User from "./pages/user/User"
 /// STATIC COMPONENTS
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -53,7 +52,7 @@ function App() {
             <Route path="/" element={<Home />} />
           </Routes>
         </Wrapper>
-        <Footer />
+
       </AuthContextProvider>
     </ThemeProvider>
   );
