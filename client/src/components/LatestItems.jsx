@@ -2,6 +2,8 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import { DataGrid } from "@mui/x-data-grid";
 
+import mockData from "../services/collection-data";
+
 const columns = [
   {
     field: "item",
@@ -27,7 +29,15 @@ const columns = [
   },
 ];
 
-const rows = [];
+const rows = mockData.map((data) => {
+  return {
+    id: data.id,
+    item: data.item,
+    collection: data.collection,
+    author: data.author,
+    date: data.date,
+  };
+});
 
 const LatestItems = () => {
   return (
