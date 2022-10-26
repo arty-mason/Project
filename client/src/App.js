@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from '@mui/material/styles';
 
-import { theme } from "./config/theme"
+import { lightTheme, darkTheme } from "./config/theme"
 import { AuthContextProvider } from './context/AuthContext';
 
 /// PAGES
@@ -17,10 +17,18 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDarkTheme(old => !old);
+  };
+
+  const theme = isDarkTheme ? darkTheme : lightTheme;
+
   return (
     <ThemeProvider theme={theme}>
       <AuthContextProvider>
-        <Header />
+        <Header toggleTheme={toggleTheme} />
         <Wrapper>
           <Routes>
             <Route path="/signin" element={<Signin />} />

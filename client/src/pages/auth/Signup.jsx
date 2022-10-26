@@ -20,6 +20,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+    console.log(error);
     try {
       await createUser(login, password);
     } catch (e) {

@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import { theme } from "../config/theme";
+import { useTheme } from "@mui/material/styles";
 import CustomizedSwitches from "../config/ThemeSwitcher";
 import { Link } from "react-router-dom";
 
@@ -52,7 +52,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const Header = () => {
+const Header = (props) => {
+  const { toggleTheme } = props;
+  const theme = useTheme();
   return (
     <Box
       position="static"
@@ -76,7 +78,7 @@ const Header = () => {
         >
           <MenuIcon />
         </IconButton>
-        <CustomizedSwitches />
+        <CustomizedSwitches toggleTheme={toggleTheme} />
         <Typography
           variant="h6"
           noWrap

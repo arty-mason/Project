@@ -15,11 +15,12 @@ import {
   Typography,
 } from "@mui/material";
 
-import { theme } from "../config/theme";
+import { useTheme } from "@mui/material/styles";
 
 import mockData from "../services/collection-data";
 
 const Feed = () => {
+  const theme = useTheme();
   return (
     <Grid
       container

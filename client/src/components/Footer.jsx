@@ -1,9 +1,10 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import React from "react";
-import { theme } from "../config/theme";
+import { useTheme } from "@mui/material/styles";
 
 const Footer = () => {
+  const theme = useTheme();
   return (
     <Box
       sx={{
