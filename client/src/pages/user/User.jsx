@@ -1,7 +1,29 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import Box from "@mui/material/Box";
+import { Button, Typography } from "@mui/material";
+
+import { useUserAuth } from "../../context/AuthContext";
 
 const User = () => {
-  return <div>User</div>;
+  const { user, logout } = useUserAuth();
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate("/");
+      console.log("You are logged out");
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
+
+  return (
+    <Box>
+      <Typography>User: {user && user.email}</Typography>
+      <Button onClick={handleLogout}>Logout</Button>
+    </Box>
+  );
 };
 
 export default User;

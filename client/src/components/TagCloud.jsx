@@ -24,6 +24,7 @@ const Tags = () => (
       tags={data}
       randomSeed={500}
       style={{ width: 500, textAlign: "center" }}
+      onClick={(tag) => alert(`${tag.value} is clicked!`)}
     />
   </Box>
 );

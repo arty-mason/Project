@@ -10,6 +10,7 @@ import Signin from "./pages/auth/Signin";
 import Signup from "./pages/auth/Signup";
 import Home from "./pages/home/Home";
 import Admin from "./pages/admin/Admin"
+import User from "./pages/user/User"
 
 /// STATIC COMPONENTS
 import Wrapper from "./components/Wrapper";
@@ -34,6 +35,7 @@ function App() {
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/user" element={<User />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </Wrapper>
