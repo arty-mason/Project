@@ -4,6 +4,8 @@ import { ThemeProvider } from '@mui/material/styles';
 
 import { lightTheme, darkTheme } from "./config/theme"
 import { AuthContextProvider } from './context/AuthContext';
+import ProtectedRoute from "./components/ProtectedRoute"
+
 
 /// PAGES
 import Signin from "./pages/auth/Signin";
@@ -34,8 +36,20 @@ function App() {
           <Routes>
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/admin" element={<Admin />} />
-            <Route path="/user" element={<User />} />
+            <Route
+              path="/admin"
+              element={
+                <ProtectedRoute>
+                  <Admin />
+                </ProtectedRoute>
+              } />
+            <Route
+              path="/user"
+              element={
+                <ProtectedRoute>
+                  <User />
+                </ProtectedRoute>
+              } />
             <Route path="/" element={<Home />} />
           </Routes>
         </Wrapper>
