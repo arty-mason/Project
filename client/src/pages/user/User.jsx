@@ -19,7 +19,12 @@ const User = () => {
   };
 
   return (
-    <Box>
+    <Box
+      sx={{
+        height: "100%",
+        width: "100%",
+      }}
+    >
       <Typography>User: {user && user.email}</Typography>
       <Button onClick={handleLogout}>Logout</Button>
     </Box>

@@ -7,12 +7,11 @@ const Wrapper = (props) => {
   const theme = useTheme();
   return (
     <Box
-      fullWidth
       sx={{
         display: "flex",
         flexDirection: "column",
-        height: "100%",
-        width: "100%",
+        maxHeight: "1200px",
+        maxWidth: "1920px",
         justifyContent: "space-between",
         backgroundColor: theme.palette?.mode === "dark" ? "#607d8b" : "#eceff1",
       }}

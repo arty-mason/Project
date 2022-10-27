@@ -29,7 +29,15 @@ const Home = () => {
         </Typography>
       </Box>
       <LatestItems />
-      <Feed />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alinItems: "center",
+        }}
+      >
+        <Feed />
+      </Box>
       <TagCloud />
     </Box>
   );
