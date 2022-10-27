@@ -1,0 +1,898 @@
+[debug] [2022-10-27T20:33:50.117Z] ----------------------------------------------------------------------
+[debug] [2022-10-27T20:33:50.119Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tyoma\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-10-27T20:33:50.119Z] CLI Version:   11.9.0
+[debug] [2022-10-27T20:33:50.119Z] Platform:      win32
+[debug] [2022-10-27T20:33:50.119Z] Node Version:  v18.7.0
+[debug] [2022-10-27T20:33:50.120Z] Time:          Thu Oct 27 2022 23:33:50 GMT+0300 (Москва, стандартное время)
+[debug] [2022-10-27T20:33:50.120Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-27T20:33:50.208Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-27T20:33:50.208Z] > authorizing via signed-in user (tyoma.manager@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-10-27T20:33:50.224Z] [hub] writing locator at C:\Users\tyoma\AppData\Local\Temp\hub-collections-lib.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, eventarc\u001b[22m"}}
+[warn] !  Your requested "node" version "16" doesn't match your global version "18". Using node@18 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"18\". Using node@18 from host."}}
+[debug] [2022-10-27T20:33:50.261Z] defaultcredentials: writing to file C:\Users\tyoma\AppData\Roaming\firebase\tyoma_manager_gmail.com_application_default_credentials.json
+[debug] [2022-10-27T20:33:50.262Z] Setting GAC to C:\Users\tyoma\AppData\Roaming\firebase\tyoma_manager_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\tyoma\\AppData\\Roaming\\firebase\\tyoma_manager_gmail.com_application_default_credentials.json"}}
+[debug] [2022-10-27T20:33:50.264Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/collections-lib/adminSdkConfig [none]
+[debug] [2022-10-27T20:33:50.598Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/collections-lib/adminSdkConfig 200
+[debug] [2022-10-27T20:33:50.599Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/collections-lib/adminSdkConfig {"projectId":"collections-lib","storageBucket":"collections-lib.appspot.com"}
+[debug] [2022-10-27T20:33:50.623Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-27T20:33:50.623Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-27T20:33:50.623Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\tyoma\\.cache\\firebase\\emulators\\ui-v1.9.0\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\tyoma\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.9.0\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-10-27T20:33:50.729Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "D:\IT\Itransition\Project\server" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\IT\\Itransition\\Project\\server\" for Cloud Functions..."}}
+[debug] [2022-10-27T20:33:50.890Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-27T20:33:53.110Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-27T20:33:53.110Z] Building nodejs source
+[debug] [2022-10-27T20:33:53.110Z] Analyzing nodejs backend spec
+[debug] [2022-10-27T20:33:53.111Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-27T20:33:53.287Z] Serving at port 9005
+
+[debug] [2022-10-27T20:33:53.822Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","region":["europe-central2"],"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-27T20:33:53.860Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] +  functions[europe-central2-app]: http function initialized (http://localhost:5001/collections-lib/europe-central2/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/collections-lib/europe-central2/app)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-10-27T20:34:20.957Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:34:20.958Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:34:20.958Z] Accepted request GET /collections-lib/europe-central2/app --> europe-central2-app
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-10-27T20:34:20.968Z] [worker-pool] addWorker(europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(europe-central2-app)"}}
+[debug] [2022-10-27T20:34:20.968Z] [worker-pool] Adding worker with key europe-central2-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key europe-central2-app, total=1"}}
+[debug] [2022-10-27T20:34:20.968Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:34:20.968Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:34:22.011Z] [runtime-status] [8700] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:34:22.012Z] [runtime-status] [8700] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:34:22.012Z] [runtime-status] [8700] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-27T20:34:22.013Z] [runtime-status] [8700] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:34:22.051Z] [runtime-status] [8700] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-27T20:34:22.051Z] [runtime-status] [8700] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-10-27T20:34:22.051Z] [runtime-status] [8700] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:34:22.052Z] [runtime-status] [8700] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:34:22.053Z] [runtime-status] [8700] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:34:22.053Z] [runtime-status] [8700] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-10-27T20:34:22.053Z] [runtime-status] [8700] Functions runtime initialized. {"cwd":"D:\\IT\\Itransition\\Project\\server","node_version":"18.7.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Functions runtime initialized. {\"cwd\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\",\"node_version\":\"18.7.0\"}"}}
+[debug] [2022-10-27T20:34:22.592Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:34:22.593Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:34:22.596Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:34:22.655Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:34:22.655Z] [functions] Got req.url=/collections-lib/europe-central2/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app, mapping to path=/"}}
+[debug] [2022-10-27T20:34:22.656Z] [runtime-status] [8700] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling GET request"}}
+[debug] [2022-10-27T20:34:22.659Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:34:22.661Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:34:22.661Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:39:07.349Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:39:07.349Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:39:07.349Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:39:07.350Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:39:07.350Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:39:07.351Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:39:07.351Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:39:07.352Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:39:07.458Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:39:07.458Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:39:07.472Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:39:07.483Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:39:07.630Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:39:07.630Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:40:38.275Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:40:38.275Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:40:38.275Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:40:38.275Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:40:38.275Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:40:38.276Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:40:38.277Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:40:38.277Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:40:38.394Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:40:38.395Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:40:38.396Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:40:38.398Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:40:38.483Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:40:38.483Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:40:48.286Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:40:48.286Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:40:48.286Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:40:48.286Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:40:48.286Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:40:48.287Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:40:48.287Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:40:48.288Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:40:48.402Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:40:48.402Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:40:48.403Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:40:48.405Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:40:48.482Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:40:48.482Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:40:52.437Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:40:52.438Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:40:52.438Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:40:52.438Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:40:52.438Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:40:52.438Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:40:52.439Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:40:52.439Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:40:52.557Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:40:52.557Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:40:52.558Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:40:52.561Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:40:52.642Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:40:52.643Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:40:56.065Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:40:56.066Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:40:56.066Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:40:56.066Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:40:56.066Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:40:56.066Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:40:56.067Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:40:56.067Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:40:56.184Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:40:56.184Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:40:56.185Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:40:56.187Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:40:56.283Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:40:56.283Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:40:58.637Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:40:58.637Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:40:58.637Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:40:58.637Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:40:58.637Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:40:58.638Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:40:58.638Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:40:58.638Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:40:58.753Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:40:58.753Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:40:58.754Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:40:58.756Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:40:58.839Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:40:58.839Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:00.940Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:00.941Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:00.941Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:00.941Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:00.941Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:00.942Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:00.942Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:00.942Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:01.055Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:01.055Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:01.056Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:01.058Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:01.139Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:01.139Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:03.804Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:03.805Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:03.805Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:03.805Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:03.805Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:03.805Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:03.806Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:03.807Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:03.913Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:03.914Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:03.915Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:03.917Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:04.040Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:04.040Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:06.199Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:06.199Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:06.200Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:06.200Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:06.200Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:06.200Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:06.201Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:06.201Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:06.315Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:06.315Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:06.316Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:06.317Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:06.406Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:06.406Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:08.914Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:08.915Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:08.915Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:08.915Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:08.915Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:08.915Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:08.916Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:08.916Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:09.024Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:09.024Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:09.025Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:09.027Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:09.128Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:09.129Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:11.423Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:11.423Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:11.423Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:11.423Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:11.423Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:11.423Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:11.424Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:11.424Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:11.528Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:11.528Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:11.530Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:11.531Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:11.636Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:11.637Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:14.735Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:14.735Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:14.735Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:14.735Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:14.735Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:14.736Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:14.736Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:14.737Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:14.842Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:14.842Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:14.843Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:14.844Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:14.942Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:14.942Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:17.434Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:17.435Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:17.435Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:17.435Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:17.435Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:17.435Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:17.436Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:17.436Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:17.553Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:17.553Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:17.554Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:17.555Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:17.647Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:17.647Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:19.941Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:19.941Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:19.941Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:19.941Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:19.941Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:19.941Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:19.942Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:19.942Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:20.058Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:20.059Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:20.060Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:20.061Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:20.212Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:20.212Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:22.847Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:22.847Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:22.847Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:22.847Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:22.847Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:22.848Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:22.848Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:22.849Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:22.959Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:22.959Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:22.960Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:22.961Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:23.101Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:23.101Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:25.841Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:25.841Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:25.841Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:25.841Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:25.841Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:25.842Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:25.842Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:25.842Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:25.949Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:25.950Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:25.951Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:25.952Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:26.030Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:26.030Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:41:29.154Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:41:29.154Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:41:29.154Z] Accepted request POST /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:41:29.154Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:41:29.154Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:41:29.155Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:41:29.155Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:41:29.156Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:41:29.258Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:41:29.259Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:41:29.259Z] [runtime-status] [8700] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling POST request"}}
+[debug] [2022-10-27T20:41:29.261Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:41:29.338Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:41:29.338Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:43:58.933Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:43:58.934Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:43:58.934Z] Accepted request GET /collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878 --> europe-central2-app
+[debug] [2022-10-27T20:43:58.934Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:43:58.934Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:43:58.934Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:43:58.935Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:43:58.935Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:43:59.047Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:43:59.047Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878, mapping to path=/collections/635aec6b6c8550b380f5c878 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878, mapping to path=/collections/635aec6b6c8550b380f5c878"}}
+[debug] [2022-10-27T20:43:59.048Z] [runtime-status] [8700] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling GET request"}}
+[debug] [2022-10-27T20:43:59.050Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:43:59.120Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:43:59.120Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:45:36.320Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:45:36.320Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:45:36.321Z] Accepted request PUT /collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878 --> europe-central2-app
+[debug] [2022-10-27T20:45:36.321Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:45:36.321Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:45:36.322Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:45:36.322Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:45:36.322Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:45:36.440Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:45:36.440Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878, mapping to path=/collections/635aec6b6c8550b380f5c878 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878, mapping to path=/collections/635aec6b6c8550b380f5c878"}}
+[debug] [2022-10-27T20:45:36.441Z] [runtime-status] [8700] Ephemeral server handling PUT request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling PUT request"}}
+[debug] [2022-10-27T20:45:36.442Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:45:36.561Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:45:36.561Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:47:25.845Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:47:25.845Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:47:25.845Z] Accepted request PUT /collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878 --> europe-central2-app
+[debug] [2022-10-27T20:47:25.845Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:47:25.845Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: BUSY"}}
+[debug] [2022-10-27T20:47:25.846Z] [runtime-status] [8700] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:47:25.847Z] [runtime-status] [8700] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Running app in signature http"}}
+[debug] [2022-10-27T20:47:25.847Z] [runtime-status] [8700] Listening to port: \\?\pipe\fire_emu_7fc14cee3ffe6566 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Listening to port: \\\\?\\pipe\\fire_emu_7fc14cee3ffe6566"}}
+[debug] [2022-10-27T20:47:25.958Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:47:25.958Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878, mapping to path=/collections/635aec6b6c8550b380f5c878 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878, mapping to path=/collections/635aec6b6c8550b380f5c878"}}
+[debug] [2022-10-27T20:47:25.959Z] [runtime-status] [8700] Ephemeral server handling PUT request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server handling PUT request"}}
+[debug] [2022-10-27T20:47:25.959Z] [runtime-status] [8700] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [8700] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:47:26.038Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: IDLE"}}
+[debug] [2022-10-27T20:47:26.038Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:48:11.227Z] File D:\IT\Itransition\Project\server\services\collectionsService.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\IT\\Itransition\\Project\\server\\services\\collectionsService.js changed, reloading triggers"}}
+[debug] [2022-10-27T20:48:12.239Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-27T20:48:14.595Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-27T20:48:14.595Z] Building nodejs source
+[debug] [2022-10-27T20:48:14.595Z] Analyzing nodejs backend spec
+[debug] [2022-10-27T20:48:14.595Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-27T20:48:14.768Z] Serving at port 9005
+
+[debug] [2022-10-27T20:48:15.308Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","region":["europe-central2"],"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-27T20:48:15.311Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-10-27T20:48:25.313Z] [worker-pool] Shutting down IDLE worker (europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (europe-central2-app)"}}
+[debug] [2022-10-27T20:48:25.313Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: FINISHING"}}
+[debug] [2022-10-27T20:48:25.322Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: exited"}}
+[debug] [2022-10-27T20:48:25.323Z] [worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-40459981-06f0-4aeb-a2ed-c9c9638fd8fa]: FINISHED"}}
+[debug] [2022-10-27T20:48:28.049Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:48:28.049Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:48:28.049Z] Accepted request PUT /collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878 --> europe-central2-app
+[debug] [2022-10-27T20:48:28.049Z] [worker-pool] Cleaned up workers for europe-central2-app: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for europe-central2-app: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-10-27T20:48:28.056Z] [worker-pool] addWorker(europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(europe-central2-app)"}}
+[debug] [2022-10-27T20:48:28.056Z] [worker-pool] Adding worker with key europe-central2-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key europe-central2-app, total=1"}}
+[debug] [2022-10-27T20:48:28.056Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:48:28.056Z] [worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: BUSY"}}
+[debug] [2022-10-27T20:48:29.103Z] [runtime-status] [2860] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:48:29.104Z] [runtime-status] [2860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:48:29.104Z] [runtime-status] [2860] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-27T20:48:29.105Z] [runtime-status] [2860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:48:29.143Z] [runtime-status] [2860] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-27T20:48:29.143Z] [runtime-status] [2860] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-10-27T20:48:29.143Z] [runtime-status] [2860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:48:29.144Z] [runtime-status] [2860] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:48:29.145Z] [runtime-status] [2860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:48:29.145Z] [runtime-status] [2860] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-10-27T20:48:29.145Z] [runtime-status] [2860] Functions runtime initialized. {"cwd":"D:\\IT\\Itransition\\Project\\server","node_version":"18.7.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Functions runtime initialized. {\"cwd\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\",\"node_version\":\"18.7.0\"}"}}
+[debug] [2022-10-27T20:48:29.696Z] [runtime-status] [2860] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:48:29.696Z] [runtime-status] [2860] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Running app in signature http"}}
+[debug] [2022-10-27T20:48:29.700Z] [runtime-status] [2860] Listening to port: \\?\pipe\fire_emu_0e2697e106162a4e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Listening to port: \\\\?\\pipe\\fire_emu_0e2697e106162a4e"}}
+[debug] [2022-10-27T20:48:29.744Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:48:29.744Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878, mapping to path=/collections/635aec6b6c8550b380f5c878 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878, mapping to path=/collections/635aec6b6c8550b380f5c878"}}
+[debug] [2022-10-27T20:48:29.754Z] [runtime-status] [2860] Ephemeral server handling PUT request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Ephemeral server handling PUT request"}}
+[debug] [2022-10-27T20:48:29.757Z] [runtime-status] [2860] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:48:30.836Z] [worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: IDLE"}}
+[debug] [2022-10-27T20:48:30.836Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:48:34.367Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:48:34.367Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:48:34.367Z] Accepted request PUT /collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878 --> europe-central2-app
+[debug] [2022-10-27T20:48:34.367Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:48:34.367Z] [worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: BUSY"}}
+[debug] [2022-10-27T20:48:34.368Z] [runtime-status] [2860] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:48:34.369Z] [runtime-status] [2860] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Running app in signature http"}}
+[debug] [2022-10-27T20:48:34.369Z] [runtime-status] [2860] Listening to port: \\?\pipe\fire_emu_0e2697e106162a4e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Listening to port: \\\\?\\pipe\\fire_emu_0e2697e106162a4e"}}
+[debug] [2022-10-27T20:48:34.472Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:48:34.473Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878, mapping to path=/collections/635aec6b6c8550b380f5c878 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections/635aec6b6c8550b380f5c878, mapping to path=/collections/635aec6b6c8550b380f5c878"}}
+[debug] [2022-10-27T20:48:34.474Z] [runtime-status] [2860] Ephemeral server handling PUT request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Ephemeral server handling PUT request"}}
+[debug] [2022-10-27T20:48:34.474Z] [runtime-status] [2860] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:48:34.543Z] [worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: IDLE"}}
+[debug] [2022-10-27T20:48:34.543Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:49:24.357Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:49:24.357Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:49:24.357Z] Accepted request GET /collections-lib/europe-central2/app/collections --> europe-central2-app
+[debug] [2022-10-27T20:49:24.357Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:49:24.357Z] [worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: BUSY"}}
+[debug] [2022-10-27T20:49:24.358Z] [runtime-status] [2860] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:49:24.358Z] [runtime-status] [2860] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Running app in signature http"}}
+[debug] [2022-10-27T20:49:24.359Z] [runtime-status] [2860] Listening to port: \\?\pipe\fire_emu_0e2697e106162a4e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Listening to port: \\\\?\\pipe\\fire_emu_0e2697e106162a4e"}}
+[debug] [2022-10-27T20:49:24.469Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:49:24.470Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections, mapping to path=/collections"}}
+[debug] [2022-10-27T20:49:24.471Z] [runtime-status] [2860] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Ephemeral server handling GET request"}}
+[debug] [2022-10-27T20:49:24.471Z] [runtime-status] [2860] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:49:24.474Z] [worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: IDLE"}}
+[debug] [2022-10-27T20:49:24.474Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:49:32.867Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:49:32.867Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:49:32.867Z] Accepted request GET /collections-lib/europe-central2/app/collections/last --> europe-central2-app
+[debug] [2022-10-27T20:49:32.867Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:49:32.867Z] [worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: BUSY"}}
+[debug] [2022-10-27T20:49:32.868Z] [runtime-status] [2860] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:49:32.869Z] [runtime-status] [2860] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Running app in signature http"}}
+[debug] [2022-10-27T20:49:32.869Z] [runtime-status] [2860] Listening to port: \\?\pipe\fire_emu_0e2697e106162a4e {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Listening to port: \\\\?\\pipe\\fire_emu_0e2697e106162a4e"}}
+[debug] [2022-10-27T20:49:32.976Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:49:32.976Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections/last, mapping to path=/collections/last {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections/last, mapping to path=/collections/last"}}
+[debug] [2022-10-27T20:49:32.977Z] [runtime-status] [2860] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Ephemeral server handling GET request"}}
+[debug] [2022-10-27T20:49:32.978Z] [runtime-status] [2860] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [2860] Ephemeral server survived."}}
+[info] >  D:\IT\Itransition\Project\server\node_modules\mongoose\lib\query.js:4891 {"user":"D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4891\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4891\r"}}
+[info] >    const castError = new CastError(); {"user":"  const castError = new CastError();\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   const castError = new CastError();\r"}}
+[info] >                      ^ {"user":"                    ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m                     ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  CastError: Cast to ObjectId failed for value "last" (type string) at path "_id" for model "Collection" {"user":"CastError: Cast to ObjectId failed for value \"last\" (type string) at path \"_id\" for model \"Collection\"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m CastError: Cast to ObjectId failed for value \"last\" (type string) at path \"_id\" for model \"Collection\"\r"}}
+[info] >      at model.Query.exec (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\query.js:4891:21) {"user":"    at model.Query.exec (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4891:21)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at model.Query.exec (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4891:21)\r"}}
+[info] >      at Query.then (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\query.js:4990:15) {"user":"    at Query.then (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4990:15)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Query.then (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4990:15)\r"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) { {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {\r"}}
+[info] >    messageFormat: undefined, {"user":"  messageFormat: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   messageFormat: undefined,\r"}}
+[info] >    stringValue: '"last"', {"user":"  stringValue: '\"last\"',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   stringValue: '\"last\"',\r"}}
+[info] >    kind: 'ObjectId', {"user":"  kind: 'ObjectId',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   kind: 'ObjectId',\r"}}
+[info] >    value: 'last', {"user":"  value: 'last',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   value: 'last',\r"}}
+[info] >    path: '_id', {"user":"  path: '_id',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   path: '_id',\r"}}
+[info] >    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer {"user":"  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer\r"}}
+[info] >        at new BSONTypeError (D:\IT\Itransition\Project\server\node_modules\bson\lib\error.js:41:28) {"user":"      at new BSONTypeError (D:\\IT\\Itransition\\Project\\server\\node_modules\\bson\\lib\\error.js:41:28)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at new BSONTypeError (D:\\IT\\Itransition\\Project\\server\\node_modules\\bson\\lib\\error.js:41:28)\r"}}
+[info] >        at new ObjectId (D:\IT\Itransition\Project\server\node_modules\bson\lib\objectid.js:67:23) {"user":"      at new ObjectId (D:\\IT\\Itransition\\Project\\server\\node_modules\\bson\\lib\\objectid.js:67:23)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at new ObjectId (D:\\IT\\Itransition\\Project\\server\\node_modules\\bson\\lib\\objectid.js:67:23)\r"}}
+[info] >        at castObjectId (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\cast\objectid.js:25:12) {"user":"      at castObjectId (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\cast\\objectid.js:25:12)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at castObjectId (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\cast\\objectid.js:25:12)\r"}}
+[info] >        at ObjectId.cast (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\schema\objectid.js:246:12) {"user":"      at ObjectId.cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schema\\objectid.js:246:12)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at ObjectId.cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schema\\objectid.js:246:12)\r"}}
+[info] >        at SchemaType.applySetters (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\schematype.js:1201:12) {"user":"      at SchemaType.applySetters (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1201:12)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at SchemaType.applySetters (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1201:12)\r"}}
+[info] >        at SchemaType._castForQuery (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\schematype.js:1648:15) {"user":"      at SchemaType._castForQuery (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1648:15)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at SchemaType._castForQuery (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1648:15)\r"}}
+[info] >        at SchemaType.castForQuery (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\schematype.js:1636:15) {"user":"      at SchemaType.castForQuery (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1636:15)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at SchemaType.castForQuery (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1636:15)\r"}}
+[info] >        at SchemaType.castForQueryWrapper (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\schematype.js:1612:20) {"user":"      at SchemaType.castForQueryWrapper (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1612:20)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at SchemaType.castForQueryWrapper (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1612:20)\r"}}
+[info] >        at cast (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\cast.js:342:32) {"user":"      at cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\cast.js:342:32)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\cast.js:342:32)\r"}}
+[info] >        at Query.cast (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\query.js:5319:12), {"user":"      at Query.cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:5319:12),\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at Query.cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:5319:12),\r"}}
+[info] >    valueType: 'string' {"user":"  valueType: 'string'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   valueType: 'string'\r"}}
+[info] >  } {"user":"}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m }\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.7.0 {"user":"Node.js v18.7.0\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.7.0\r"}}
+[debug] [2022-10-27T20:49:32.995Z] [worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: exited"}}
+[debug] [2022-10-27T20:49:32.995Z] [worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-515c84e6-b01b-4442-90b4-6053b15375f1]: FINISHED"}}
+[debug] [2022-10-27T20:49:32.996Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:51:21.408Z] File D:\IT\Itransition\Project\server\services\collectionsService.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\IT\\Itransition\\Project\\server\\services\\collectionsService.js changed, reloading triggers"}}
+[debug] [2022-10-27T20:51:22.409Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-27T20:51:25.426Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-27T20:51:25.427Z] Building nodejs source
+[debug] [2022-10-27T20:51:25.427Z] Analyzing nodejs backend spec
+[debug] [2022-10-27T20:51:25.427Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-27T20:51:25.601Z] Serving at port 9005
+
+[debug] [2022-10-27T20:51:26.181Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","region":["europe-central2"],"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-27T20:51:26.184Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-10-27T20:52:00.114Z] File D:\IT\Itransition\Project\server\services\collectionsService.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\IT\\Itransition\\Project\\server\\services\\collectionsService.js changed, reloading triggers"}}
+[debug] [2022-10-27T20:52:01.119Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-27T20:52:04.066Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-27T20:52:04.066Z] Building nodejs source
+[debug] [2022-10-27T20:52:04.066Z] Analyzing nodejs backend spec
+[debug] [2022-10-27T20:52:04.067Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-27T20:52:04.244Z] Serving at port 9005
+
+[debug] [2022-10-27T20:52:04.792Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","region":["europe-central2"],"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-27T20:52:04.795Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-10-27T20:52:13.914Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:52:13.914Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:52:13.914Z] Accepted request GET /collections-lib/europe-central2/app/collections/last --> europe-central2-app
+[debug] [2022-10-27T20:52:13.914Z] [worker-pool] Cleaned up workers for europe-central2-app: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for europe-central2-app: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-10-27T20:52:13.920Z] [worker-pool] addWorker(europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(europe-central2-app)"}}
+[debug] [2022-10-27T20:52:13.920Z] [worker-pool] Adding worker with key europe-central2-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key europe-central2-app, total=1"}}
+[debug] [2022-10-27T20:52:13.920Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:52:13.920Z] [worker-europe-central2-app-607d720f-e62a-4773-9437-b873a00ea9ad]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-607d720f-e62a-4773-9437-b873a00ea9ad]: BUSY"}}
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-10-27T20:52:14.806Z] [worker-pool] Marking BUSY worker to finish (europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Marking BUSY worker to finish (europe-central2-app)"}}
+[debug] [2022-10-27T20:52:14.806Z] [worker-europe-central2-app-607d720f-e62a-4773-9437-b873a00ea9ad]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-607d720f-e62a-4773-9437-b873a00ea9ad]: FINISHING"}}
+[debug] [2022-10-27T20:52:14.945Z] [runtime-status] [7264] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:52:14.946Z] [runtime-status] [7264] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:52:14.946Z] [runtime-status] [7264] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-27T20:52:14.947Z] [runtime-status] [7264] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:52:14.984Z] [runtime-status] [7264] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-27T20:52:14.985Z] [runtime-status] [7264] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-10-27T20:52:14.985Z] [runtime-status] [7264] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:52:14.986Z] [runtime-status] [7264] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:52:14.987Z] [runtime-status] [7264] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:52:14.987Z] [runtime-status] [7264] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-10-27T20:52:14.987Z] [runtime-status] [7264] Functions runtime initialized. {"cwd":"D:\\IT\\Itransition\\Project\\server","node_version":"18.7.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Functions runtime initialized. {\"cwd\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\",\"node_version\":\"18.7.0\"}"}}
+[debug] [2022-10-27T20:52:15.539Z] [runtime-status] [7264] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:52:15.539Z] [runtime-status] [7264] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Running app in signature http"}}
+[debug] [2022-10-27T20:52:15.543Z] [runtime-status] [7264] Listening to port: \\?\pipe\fire_emu_49b7863a92f36d93 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Listening to port: \\\\?\\pipe\\fire_emu_49b7863a92f36d93"}}
+[debug] [2022-10-27T20:52:15.592Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:52:15.592Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections/last, mapping to path=/collections/last {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections/last, mapping to path=/collections/last"}}
+[debug] [2022-10-27T20:52:15.593Z] [runtime-status] [7264] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Ephemeral server handling GET request"}}
+[debug] [2022-10-27T20:52:15.595Z] [runtime-status] [7264] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [7264] Ephemeral server survived."}}
+[info] >  D:\IT\Itransition\Project\server\node_modules\mongoose\lib\query.js:4891 {"user":"D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4891\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4891\r"}}
+[info] >    const castError = new CastError(); {"user":"  const castError = new CastError();\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   const castError = new CastError();\r"}}
+[info] >                      ^ {"user":"                    ^\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m                     ^\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  CastError: Cast to ObjectId failed for value "last" (type string) at path "_id" for model "Collection" {"user":"CastError: Cast to ObjectId failed for value \"last\" (type string) at path \"_id\" for model \"Collection\"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m CastError: Cast to ObjectId failed for value \"last\" (type string) at path \"_id\" for model \"Collection\"\r"}}
+[info] >      at model.Query.exec (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\query.js:4891:21) {"user":"    at model.Query.exec (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4891:21)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at model.Query.exec (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4891:21)\r"}}
+[info] >      at Query.then (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\query.js:4990:15) {"user":"    at Query.then (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4990:15)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Query.then (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:4990:15)\r"}}
+[info] >      at process.processTicksAndRejections (node:internal/process/task_queues:95:5) { {"user":"    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m     at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {\r"}}
+[info] >    messageFormat: undefined, {"user":"  messageFormat: undefined,\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   messageFormat: undefined,\r"}}
+[info] >    stringValue: '"last"', {"user":"  stringValue: '\"last\"',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   stringValue: '\"last\"',\r"}}
+[info] >    kind: 'ObjectId', {"user":"  kind: 'ObjectId',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   kind: 'ObjectId',\r"}}
+[info] >    value: 'last', {"user":"  value: 'last',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   value: 'last',\r"}}
+[info] >    path: '_id', {"user":"  path: '_id',\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   path: '_id',\r"}}
+[info] >    reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer {"user":"  reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   reason: BSONTypeError: Argument passed in must be a string of 12 bytes or a string of 24 hex characters or an integer\r"}}
+[info] >        at new BSONTypeError (D:\IT\Itransition\Project\server\node_modules\bson\lib\error.js:41:28) {"user":"      at new BSONTypeError (D:\\IT\\Itransition\\Project\\server\\node_modules\\bson\\lib\\error.js:41:28)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at new BSONTypeError (D:\\IT\\Itransition\\Project\\server\\node_modules\\bson\\lib\\error.js:41:28)\r"}}
+[info] >        at new ObjectId (D:\IT\Itransition\Project\server\node_modules\bson\lib\objectid.js:67:23) {"user":"      at new ObjectId (D:\\IT\\Itransition\\Project\\server\\node_modules\\bson\\lib\\objectid.js:67:23)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at new ObjectId (D:\\IT\\Itransition\\Project\\server\\node_modules\\bson\\lib\\objectid.js:67:23)\r"}}
+[info] >        at castObjectId (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\cast\objectid.js:25:12) {"user":"      at castObjectId (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\cast\\objectid.js:25:12)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at castObjectId (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\cast\\objectid.js:25:12)\r"}}
+[info] >        at ObjectId.cast (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\schema\objectid.js:246:12) {"user":"      at ObjectId.cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schema\\objectid.js:246:12)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at ObjectId.cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schema\\objectid.js:246:12)\r"}}
+[info] >        at SchemaType.applySetters (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\schematype.js:1201:12) {"user":"      at SchemaType.applySetters (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1201:12)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at SchemaType.applySetters (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1201:12)\r"}}
+[info] >        at SchemaType._castForQuery (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\schematype.js:1648:15) {"user":"      at SchemaType._castForQuery (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1648:15)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at SchemaType._castForQuery (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1648:15)\r"}}
+[info] >        at SchemaType.castForQuery (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\schematype.js:1636:15) {"user":"      at SchemaType.castForQuery (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1636:15)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at SchemaType.castForQuery (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1636:15)\r"}}
+[info] >        at SchemaType.castForQueryWrapper (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\schematype.js:1612:20) {"user":"      at SchemaType.castForQueryWrapper (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1612:20)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at SchemaType.castForQueryWrapper (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\schematype.js:1612:20)\r"}}
+[info] >        at cast (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\cast.js:342:32) {"user":"      at cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\cast.js:342:32)\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\cast.js:342:32)\r"}}
+[info] >        at Query.cast (D:\IT\Itransition\Project\server\node_modules\mongoose\lib\query.js:5319:12), {"user":"      at Query.cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:5319:12),\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m       at Query.cast (D:\\IT\\Itransition\\Project\\server\\node_modules\\mongoose\\lib\\query.js:5319:12),\r"}}
+[info] >    valueType: 'string' {"user":"  valueType: 'string'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m   valueType: 'string'\r"}}
+[info] >  } {"user":"}\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m }\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  Node.js v18.7.0 {"user":"Node.js v18.7.0\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"\u001b[90m> \u001b[39m Node.js v18.7.0\r"}}
+[debug] [2022-10-27T20:52:15.613Z] [worker-europe-central2-app-607d720f-e62a-4773-9437-b873a00ea9ad]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-607d720f-e62a-4773-9437-b873a00ea9ad]: exited"}}
+[debug] [2022-10-27T20:52:15.613Z] [worker-europe-central2-app-607d720f-e62a-4773-9437-b873a00ea9ad]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-607d720f-e62a-4773-9437-b873a00ea9ad]: FINISHED"}}
+[debug] [2022-10-27T20:52:15.614Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:53:10.482Z] File D:\IT\Itransition\Project\server\controllers\collectionsController.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\IT\\Itransition\\Project\\server\\controllers\\collectionsController.js changed, reloading triggers"}}
+[debug] [2022-10-27T20:53:11.483Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-27T20:53:13.798Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-27T20:53:13.798Z] Building nodejs source
+[debug] [2022-10-27T20:53:13.798Z] Analyzing nodejs backend spec
+[debug] [2022-10-27T20:53:13.798Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-27T20:53:13.976Z] Serving at port 9005
+
+[debug] [2022-10-27T20:53:14.519Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","region":["europe-central2"],"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-27T20:53:14.523Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-10-27T20:53:31.844Z] File D:\IT\Itransition\Project\server\services\collectionsService.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\IT\\Itransition\\Project\\server\\services\\collectionsService.js changed, reloading triggers"}}
+[debug] [2022-10-27T20:53:32.845Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-27T20:53:35.305Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-27T20:53:35.305Z] Building nodejs source
+[debug] [2022-10-27T20:53:35.305Z] Analyzing nodejs backend spec
+[debug] [2022-10-27T20:53:35.306Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-27T20:53:35.480Z] Serving at port 9005
+
+[debug] [2022-10-27T20:53:36.021Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","region":["europe-central2"],"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-27T20:53:36.025Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-10-27T20:53:42.275Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:53:42.275Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:53:42.275Z] Accepted request GET /collections-lib/europe-central2/app/collections/last --> europe-central2-app
+[debug] [2022-10-27T20:53:42.275Z] [worker-pool] Cleaned up workers for europe-central2-app: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for europe-central2-app: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-10-27T20:53:42.281Z] [worker-pool] addWorker(europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(europe-central2-app)"}}
+[debug] [2022-10-27T20:53:42.281Z] [worker-pool] Adding worker with key europe-central2-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key europe-central2-app, total=1"}}
+[debug] [2022-10-27T20:53:42.281Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:53:42.281Z] [worker-europe-central2-app-33ca2578-4e15-4c44-b1d8-fce5f366aae6]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-33ca2578-4e15-4c44-b1d8-fce5f366aae6]: BUSY"}}
+[debug] [2022-10-27T20:53:43.319Z] [runtime-status] [10920] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:53:43.320Z] [runtime-status] [10920] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:53:43.320Z] [runtime-status] [10920] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-27T20:53:43.321Z] [runtime-status] [10920] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:53:43.361Z] [runtime-status] [10920] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-27T20:53:43.361Z] [runtime-status] [10920] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-10-27T20:53:43.362Z] [runtime-status] [10920] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:53:43.363Z] [runtime-status] [10920] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:53:43.363Z] [runtime-status] [10920] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:53:43.363Z] [runtime-status] [10920] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-10-27T20:53:43.363Z] [runtime-status] [10920] Functions runtime initialized. {"cwd":"D:\\IT\\Itransition\\Project\\server","node_version":"18.7.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Functions runtime initialized. {\"cwd\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\",\"node_version\":\"18.7.0\"}"}}
+[debug] [2022-10-27T20:53:43.915Z] [runtime-status] [10920] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:53:43.916Z] [runtime-status] [10920] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Running app in signature http"}}
+[debug] [2022-10-27T20:53:43.920Z] [runtime-status] [10920] Listening to port: \\?\pipe\fire_emu_e9fb7b0b9a5bfb30 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Listening to port: \\\\?\\pipe\\fire_emu_e9fb7b0b9a5bfb30"}}
+[debug] [2022-10-27T20:53:43.965Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:53:43.966Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections/last, mapping to path=/collections/last {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections/last, mapping to path=/collections/last"}}
+[debug] [2022-10-27T20:53:43.967Z] [runtime-status] [10920] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Ephemeral server handling GET request"}}
+[debug] [2022-10-27T20:53:43.969Z] [runtime-status] [10920] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [10920] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:53:45.025Z] [worker-europe-central2-app-33ca2578-4e15-4c44-b1d8-fce5f366aae6]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-33ca2578-4e15-4c44-b1d8-fce5f366aae6]: IDLE"}}
+[debug] [2022-10-27T20:53:45.025Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2022-10-27T20:53:46.031Z] [worker-pool] Shutting down IDLE worker (europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (europe-central2-app)"}}
+[debug] [2022-10-27T20:53:46.031Z] [worker-europe-central2-app-33ca2578-4e15-4c44-b1d8-fce5f366aae6]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-33ca2578-4e15-4c44-b1d8-fce5f366aae6]: FINISHING"}}
+[debug] [2022-10-27T20:53:46.043Z] [worker-europe-central2-app-33ca2578-4e15-4c44-b1d8-fce5f366aae6]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-33ca2578-4e15-4c44-b1d8-fce5f366aae6]: exited"}}
+[debug] [2022-10-27T20:53:46.043Z] [worker-europe-central2-app-33ca2578-4e15-4c44-b1d8-fce5f366aae6]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-33ca2578-4e15-4c44-b1d8-fce5f366aae6]: FINISHED"}}
+[debug] [2022-10-27T20:54:15.042Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:54:15.043Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:54:15.043Z] Accepted request GET /collections-lib/europe-central2/app/collections/last?from=2 --> europe-central2-app
+[debug] [2022-10-27T20:54:15.043Z] [worker-pool] Cleaned up workers for europe-central2-app: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for europe-central2-app: 1 --> 0"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-10-27T20:54:15.048Z] [worker-pool] addWorker(europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(europe-central2-app)"}}
+[debug] [2022-10-27T20:54:15.049Z] [worker-pool] Adding worker with key europe-central2-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key europe-central2-app, total=1"}}
+[debug] [2022-10-27T20:54:15.049Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:54:15.049Z] [worker-europe-central2-app-328bbe0d-a61e-405d-b815-bf3bd077fb2b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-328bbe0d-a61e-405d-b815-bf3bd077fb2b]: BUSY"}}
+[debug] [2022-10-27T20:54:16.065Z] [runtime-status] [13584] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:54:16.066Z] [runtime-status] [13584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:54:16.067Z] [runtime-status] [13584] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-27T20:54:16.067Z] [runtime-status] [13584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:54:16.107Z] [runtime-status] [13584] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-27T20:54:16.107Z] [runtime-status] [13584] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-10-27T20:54:16.108Z] [runtime-status] [13584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:54:16.109Z] [runtime-status] [13584] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:54:16.109Z] [runtime-status] [13584] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-10-27T20:54:16.109Z] [runtime-status] [13584] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"D:\\IT\\Itransition\\Project\\server\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-10-27T20:54:16.110Z] [runtime-status] [13584] Functions runtime initialized. {"cwd":"D:\\IT\\Itransition\\Project\\server","node_version":"18.7.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Functions runtime initialized. {\"cwd\":\"D:\\\\IT\\\\Itransition\\\\Project\\\\server\",\"node_version\":\"18.7.0\"}"}}
+[debug] [2022-10-27T20:54:16.667Z] [runtime-status] [13584] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:54:16.668Z] [runtime-status] [13584] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Running app in signature http"}}
+[debug] [2022-10-27T20:54:16.672Z] [runtime-status] [13584] Listening to port: \\?\pipe\fire_emu_25101640f3fac5ac {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Listening to port: \\\\?\\pipe\\fire_emu_25101640f3fac5ac"}}
+[debug] [2022-10-27T20:54:16.722Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:54:16.722Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections/last?from=2, mapping to path=/collections/last?from=2 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections/last?from=2, mapping to path=/collections/last?from=2"}}
+[debug] [2022-10-27T20:54:16.724Z] [runtime-status] [13584] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Ephemeral server handling GET request"}}
+[debug] [2022-10-27T20:54:16.726Z] [runtime-status] [13584] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:54:17.854Z] [worker-europe-central2-app-328bbe0d-a61e-405d-b815-bf3bd077fb2b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-328bbe0d-a61e-405d-b815-bf3bd077fb2b]: IDLE"}}
+[debug] [2022-10-27T20:54:17.854Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-27T20:54:34.626Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-27T20:54:34.626Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-27T20:54:34.626Z] Accepted request GET /collections-lib/europe-central2/app/collections/last?from=2&to=4 --> europe-central2-app
+[debug] [2022-10-27T20:54:34.626Z] [worker-pool] submitWork(triggerId=europe-central2-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=europe-central2-app)"}}
+[debug] [2022-10-27T20:54:34.626Z] [worker-europe-central2-app-328bbe0d-a61e-405d-b815-bf3bd077fb2b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-328bbe0d-a61e-405d-b815-bf3bd077fb2b]: BUSY"}}
+[debug] [2022-10-27T20:54:34.627Z] [runtime-status] [13584] Beginning invocation function app! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Beginning invocation function app!"}}
+[info] i  functions: Beginning execution of "app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Beginning execution of \"app\""}}
+[debug] [2022-10-27T20:54:34.628Z] [runtime-status] [13584] Running app in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Running app in signature http"}}
+[debug] [2022-10-27T20:54:34.628Z] [runtime-status] [13584] Listening to port: \\?\pipe\fire_emu_25101640f3fac5ac {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Listening to port: \\\\?\\pipe\\fire_emu_25101640f3fac5ac"}}
+[debug] [2022-10-27T20:54:34.733Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-27T20:54:34.733Z] [functions] Got req.url=/collections-lib/europe-central2/app/collections/last?from=2&to=4, mapping to path=/collections/last?from=2&to=4 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/collections-lib/europe-central2/app/collections/last?from=2&to=4, mapping to path=/collections/last?from=2&to=4"}}
+[debug] [2022-10-27T20:54:34.734Z] [runtime-status] [13584] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Ephemeral server handling GET request"}}
+[debug] [2022-10-27T20:54:34.735Z] [runtime-status] [13584] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"[runtime-status] [13584] Ephemeral server survived."}}
+[info] i  functions: Finished "app" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"europe-central2-app"},"extension":{},"message":"Finished \"app\" in ~1s"}}
+[debug] [2022-10-27T20:54:34.794Z] [worker-europe-central2-app-328bbe0d-a61e-405d-b815-bf3bd077fb2b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-europe-central2-app-328bbe0d-a61e-405d-b815-bf3bd077fb2b]: IDLE"}}
+[debug] [2022-10-27T20:54:34.795Z] [work-queue] {"queueLength":0,"workRunningCount":0}

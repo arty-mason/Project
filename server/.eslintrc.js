@@ -12,6 +12,8 @@ module.exports = {
     "indent": ["error", 2],
     "linebreak-style": "off",
     "quotes": ["error", "double"],
+    "no-unused-vars": "warn",
+    "object-curly-spacing": "always",
   },
   parserOptions: {
     "ecmaVersion": 8,
