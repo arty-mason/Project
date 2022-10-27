@@ -9,7 +9,11 @@ module.exports = {
     "google",
   ],
   rules: {
+    "indent": ["error", 2],
     "linebreak-style": "off",
     "quotes": ["error", "double"],
+  },
+  parserOptions: {
+    "ecmaVersion": 8,
   },
 };

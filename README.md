@@ -24,14 +24,14 @@ ITEM:
 - description
 - imgPath (optional)
 - tags
-- customField (object):
+- customFields (object):
 key: name
 value: any
 - likes amount
 
 ### 
 COMMENT:
--id 
+- id 
 - itemId
 - userId
 - userFullName
