@@ -6,11 +6,13 @@ import { Button, Typography } from "@mui/material";
 import { useUserAuth } from "../../context/AuthContext";
 
 const User = () => {
-  const { user, logout } = useUserAuth();
+  const { user, logOut } = useUserAuth();
+
   const navigate = useNavigate();
+
   const handleLogout = async () => {
     try {
-      await logout();
+      await logOut();
       navigate("/");
       console.log("You are logged out");
     } catch (err) {

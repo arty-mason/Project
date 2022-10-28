@@ -9,7 +9,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import { useTheme } from "@mui/material/styles";
 import CustomizedSwitches from "../config/ThemeSwitcher";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useUserAuth } from "../context/AuthContext";
+import { Button } from "@mui/material";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -55,6 +57,20 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const Header = (props) => {
   const { toggleTheme } = props;
   const theme = useTheme();
+  const { user, logOut } = useUserAuth();
+
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      await logOut();
+      navigate("/");
+      console.log("You are logged out");
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
+
   return (
     <Box
       position="static"
@@ -90,8 +106,15 @@ const Header = (props) => {
             textDecoration: "none",
           }}
         >
-          <Link to="/"> Collections library</Link>
+          <Link to="/"> Home</Link>
         </Typography>
+        {user?.displayName ? (
+          <Button color="inherit" onClick={handleLogout}>
+            Logout
+          </Button>
+        ) : (
+          <Link to="/signin" />
+        )}
         <Search>
           <SearchIconWrapper>
             <SearchIcon />

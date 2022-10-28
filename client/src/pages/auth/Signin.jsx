@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { Link, useNavigate } from "react-router-dom";
+import { GoogleButton } from "react-google-button";
 
 import { useUserAuth } from "../../context/AuthContext";
 
@@ -9,6 +10,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 import { Input } from "../../services/authInput";
+import { useEffect } from "react";
 
 const Signin = () => {
   const [login, setLogin] = useState("");
@@ -17,7 +19,7 @@ const Signin = () => {
 
   const navigate = useNavigate();
 
-  const { signIn } = useUserAuth();
+  const { signIn, user, googleSignIn } = useUserAuth();
 
   const handleLogin = async (event) => {
     event.preventDefault();
@@ -25,12 +27,25 @@ const Signin = () => {
     console.log(error);
     try {
       await signIn(login, password);
-      navigate("/user");
     } catch (err) {
       setError(err.message);
       console.log(err.message);
     }
   };
+
+  const handleGoogleSignIn = async () => {
+    try {
+      await googleSignIn();
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    if (user !== null) {
+      navigate("/user");
+    }
+  }, [navigate, user]);
 
   return (
     <Box
@@ -49,6 +64,7 @@ const Signin = () => {
         <Typography variant="h4" component="h1" sx={{ textAlign: "center" }}>
           Sign in to your account
         </Typography>
+
         <Typography variant="h6" component="p" sx={{ textAlign: "center" }}>
           Don't have an account yet? <Link to="/signup">Sign up</Link>
         </Typography>
@@ -84,6 +100,16 @@ const Signin = () => {
           }}
         >
           Sign In
+        </Button>
+        <Typography
+          variant="h6"
+          component="p"
+          sx={{ textAlign: "center", my: "15px" }}
+        >
+          Or sign with your Google account
+        </Typography>
+        <Button color="inherit">
+          <GoogleButton onClick={handleGoogleSignIn} />
         </Button>
       </Box>
     </Box>
