@@ -14,33 +14,42 @@ const Home = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        justifyContent: "center",
+        my: "100px",
       }}
     >
-      <Typography variant="h3" component="h1" textAlign="center">
+      <Typography
+        variant="h3"
+        component="h1"
+        textAlign="center"
+        color="primary"
+      >
         Welcome to collections library!
       </Typography>
       <Box>
-        <Typography textAlign="center" variant="h4" component="p">
+        <Typography
+          textAlign="center"
+          variant="h4"
+          component="p"
+          color="primary"
+        >
           Want to create your own collection on our website? &nbsp;
           <Link to="/signup">Sign up</Link>
         </Typography>
-        <Typography textAlign="center" variant="h4" component="p">
+        <Typography
+          textAlign="center"
+          variant="h4"
+          component="p"
+          color="primary"
+          marginBottom="25px"
+        >
           Already have an account? &nbsp;
           <Link to="/signin">Sign in</Link>
         </Typography>
       </Box>
       <LatestItems />
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
-          alinItems: "center",
-        }}
-      >
-        <Feed />
-        <TagCloud />
-      </Box>
+      <Feed />
+      <TagCloud />
     </Box>
   );
 };

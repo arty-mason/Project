@@ -10,21 +10,14 @@ const Wrapper = (props) => {
       sx={{
         display: "flex",
         flexDirection: "column",
-        maxHeight: "1200px",
-        maxWidth: "1920px",
+        width: "100%",
+        height: "100%",
+        m: 0,
         justifyContent: "space-between",
         backgroundColor: theme.palette?.mode === "dark" ? "#607d8b" : "#eceff1",
       }}
     >
-      <Box>
-        <Box
-          sx={{
-            my: "100px",
-          }}
-        >
-          {children}
-        </Box>
-      </Box>
+      {children}
     </Box>
   );
 };

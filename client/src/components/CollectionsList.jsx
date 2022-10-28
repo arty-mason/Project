@@ -3,8 +3,8 @@ import { DataGrid } from "@mui/x-data-grid";
 
 const columns = [
   { field: "item", headerName: "Item name", width: 300 },
-  { field: "collection", headerName: "Collection name", width: 250 },
-  { field: "author", headerName: "Collection author", width: 150 },
+  { field: "collection", headerName: "Collection name", width: 220 },
+  { field: "author", headerName: "Collection author", width: 100 },
   {
     field: "date",
     headerName: "Date of adding",
@@ -52,14 +52,12 @@ const rows = [
 
 export default function DataTable() {
   return (
-    <div style={{ height: 400, width: "100%" }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
-        checkboxSelection
-      />
-    </div>
+    <DataGrid
+      rows={rows}
+      columns={columns}
+      pageSize={5}
+      rowsPerPageOptions={[5]}
+      checkboxSelection
+    />
   );
 }

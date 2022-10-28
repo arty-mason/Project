@@ -39,17 +39,26 @@ const Signup = () => {
         flexDirection: "column",
         alignItems: "center",
         maxWidth: "700px",
-        height: "60vh",
         mx: "auto",
-        my: 16,
+        my: 37.95,
         p: 4,
       }}
     >
       <Box>
-        <Typography variant="h4" component="h1" sx={{ textAlign: "center" }}>
+        <Typography
+          variant="h4"
+          component="h1"
+          color="primary"
+          sx={{ textAlign: "center" }}
+        >
           Sign up for a free account
         </Typography>
-        <Typography variant="h6" component="p" sx={{ textAlign: "center" }}>
+        <Typography
+          variant="h6"
+          component="p"
+          color="primary"
+          sx={{ textAlign: "center" }}
+        >
           Already have an account? <Link to="/">Sign in</Link>
         </Typography>
       </Box>
@@ -77,6 +86,7 @@ const Signup = () => {
           variant="contained"
           type="submit"
           onClick={handleSubmit}
+          color="primary"
           sx={{
             width: "100px",
             height: "40px",

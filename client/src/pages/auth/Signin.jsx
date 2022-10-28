@@ -54,18 +54,27 @@ const Signin = () => {
         flexDirection: "column",
         alignItems: "center",
         maxWidth: "700px",
-        height: "60vh",
         mx: "auto",
-        my: 16,
+        my: 30.2,
         p: 4,
       }}
     >
       <Box>
-        <Typography variant="h4" component="h1" sx={{ textAlign: "center" }}>
+        <Typography
+          variant="h4"
+          component="h1"
+          sx={{ textAlign: "center" }}
+          color="primary"
+        >
           Sign in to your account
         </Typography>
 
-        <Typography variant="h6" component="p" sx={{ textAlign: "center" }}>
+        <Typography
+          variant="h6"
+          component="p"
+          color="primary"
+          sx={{ textAlign: "center" }}
+        >
           Don't have an account yet? <Link to="/signup">Sign up</Link>
         </Typography>
       </Box>
@@ -104,6 +113,7 @@ const Signin = () => {
         <Typography
           variant="h6"
           component="p"
+          color="primary"
           sx={{ textAlign: "center", my: "15px" }}
         >
           Or sign with your Google account

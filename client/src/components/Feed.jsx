@@ -10,8 +10,8 @@ import {
   CardHeader,
   CardMedia,
   Checkbox,
-  Grid,
   IconButton,
+  Paper,
   Typography,
 } from "@mui/material";
 
@@ -22,36 +22,39 @@ import mockData from "../services/collection-data";
 const Feed = () => {
   const theme = useTheme();
   return (
-    <Grid
-      container
-      spacing={1}
+    <Box
+      id="test-feed-container"
       sx={{
-        flexDirection: { md: "row", xs: "column" },
-        justifyContent: "space-evenly",
-        alignItems: "center",
+        display: "flex",
+        flexDirection: { lg: "row", xs: "column" },
+        justifyContent: "space-between",
       }}
     >
       {mockData.map((data) => {
         return (
-          <Grid
+          <Paper
+            elevation={5}
             key={data.id}
-            item
-            lg={2}
-            md={4}
-            sm={4}
-            xs={6}
             sx={{
               my: "50px",
-              height: {
-                xl: "500px",
-                lg: "400px",
+              mx: "10px",
+              width: {
+                xl: "350px",
+                lg: "300px",
                 md: "350px",
                 sm: "300px",
                 xs: "250px",
               },
-              border: `1px solid ${theme.palette.primary.dark}`,
+              height: {
+                xl: "500px",
+                lg: "450px",
+                md: "350px",
+                sm: "300px",
+                xs: "250px",
+              },
+              border: `1px solid ${theme.palette.primary.main}`,
+              borderRadius: "15px",
               display: "flex",
-              flexWrap: "wrap",
               flexDirection: "column",
               justifyContent: "space-evenly",
               alignItems: "center",
@@ -61,12 +64,14 @@ const Feed = () => {
               avatar={
                 data.avatar ? (
                   <Avatar>
-                    <CardMedia component="img" image={data.avatar} />
+                    <CardMedia
+                      component="img"
+                      image={data.avatar}
+                      aria-label="Avatar"
+                    />
                   </Avatar>
                 ) : (
-                  <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
-                    {data.author[0]}
-                  </Avatar>
+                  <Avatar sx={{ bgcolor: "red" }}>{data.author[0]}</Avatar>
                 )
               }
               title={data.author}
@@ -128,20 +133,20 @@ const Feed = () => {
               )}
             </CardContent>
             <CardActions disableSpacing>
-              <IconButton aria-label="add to favorites">
+              <IconButton aria-label="Like">
                 <Checkbox
                   icon={<FavoriteBorder />}
                   checkedIcon={<Favorite sx={{ color: "red" }} />}
                 />
               </IconButton>
-              <IconButton aria-label="share">
+              <IconButton aria-label="Share">
                 <Share />
               </IconButton>
             </CardActions>
-          </Grid>
+          </Paper>
         );
       })}
-    </Grid>
+    </Box>
   );
 };
 
