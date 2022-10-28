@@ -6,7 +6,6 @@ import { lightTheme, darkTheme } from "./config/theme"
 import { AuthContextProvider } from './context/AuthContext';
 import ProtectedRoute from "./components/ProtectedRoute"
 
-
 /// PAGES
 import Signin from "./pages/auth/Signin";
 import Signup from "./pages/auth/Signup";

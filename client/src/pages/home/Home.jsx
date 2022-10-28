@@ -13,6 +13,7 @@ const Home = () => {
       sx={{
         display: "flex",
         flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <Typography variant="h3" component="h1" textAlign="center">
@@ -33,12 +34,13 @@ const Home = () => {
         sx={{
           display: "flex",
           justifyContent: "center",
+          flexDirection: "column",
           alinItems: "center",
         }}
       >
         <Feed />
+        <TagCloud />
       </Box>
-      <TagCloud />
     </Box>
   );
 };

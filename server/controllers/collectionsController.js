@@ -1,13 +1,45 @@
 const express = require("express");
 const router = express.Router();
 
+const { check, validationResult } = require('express-validator')
+
 const collectionService = require("../services/collectionsService");
 
-router.post("/", async (req, res) => {
-  const collectionBody = req.body;
-  const result = await collectionService.createColection(collectionBody);
-  res.send(result);
-});
+router.post("/",
+  [
+    check('name')
+      .notEmpty()
+      .isString()
+      .isLength(3, 20)
+      .withMessage("Collection name must be a string with a minimum of 3 and a maximum of 20 characters and cannot be empty"),
+    check('description')
+      .notEmpty()
+      .isString()
+      .isLength(5, 50)
+      .withMessage("Collection description must be a string with a minimum of 5 and a maximum of 50 characters and cannot be empty"),
+    check('type')
+      .notEmpty()
+      .isString()
+      .isLength(3, 20)
+      .withMessage("Collection type must be a string with 20 characters maximum and cannot be empty"),
+    check('tags')
+      .notEmpty()
+      .isArray(1, 10)
+      .withMessage("Collection tags must be an array of 5 and a maximum of 50 strings and cannot be empty"),
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+    console.log(errors);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({
+        errors: errors.array()
+      });
+    };
+
+    const collectionBody = req.body;
+    const result = await collectionService.createColection(collectionBody);
+    res.send(result);
+  });
 
 router.get("/last", async (req, res) => {
   const from = +req.query.from || 0;
