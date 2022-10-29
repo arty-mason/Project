@@ -32,6 +32,9 @@ const Home = () => {
           variant="h4"
           component="p"
           color="primary"
+          sx={{
+            textDecoration: "none",
+          }}
         >
           Want to create your own collection on our website? &nbsp;
           <Link to="/signup">Sign up</Link>

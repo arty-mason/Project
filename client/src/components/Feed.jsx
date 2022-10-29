@@ -27,7 +27,8 @@ const Feed = () => {
       sx={{
         display: "flex",
         flexDirection: { lg: "row", xs: "column" },
-        justifyContent: "space-between",
+        justifyContent: "space-around",
+        alignItems: "stretch",
       }}
     >
       {mockData.map((data) => {
@@ -37,20 +38,13 @@ const Feed = () => {
             key={data.id}
             sx={{
               my: "50px",
-              mx: "10px",
-              width: {
-                xl: "350px",
-                lg: "300px",
-                md: "350px",
-                sm: "300px",
-                xs: "250px",
-              },
-              height: {
-                xl: "500px",
-                lg: "450px",
-                md: "350px",
-                sm: "300px",
-                xs: "250px",
+              mx: "5px",
+              px: {
+                xl: "25px",
+                lg: "15px",
+                md: "20px",
+                sm: "25px",
+                xs: "30px",
               },
               border: `1px solid ${theme.palette.primary.main}`,
               borderRadius: "15px",
@@ -77,7 +71,28 @@ const Feed = () => {
               title={data.author}
               subheader={data.date}
             />
-            <Typography variant="p" color="text.secondary">
+            <Typography
+              variant="p"
+              color="text.secondary"
+              sx={{
+                maxWidth: {
+                  xl: "200px",
+                  lg: "160px",
+                  md: "300px",
+                  sm: "250px",
+                  xs: "200px",
+                },
+                minHeight: "60px",
+                fontSize: {
+                  xl: "15px",
+                  lg: "13px",
+                  md: "17px",
+                  sm: "17px",
+                  xs: "17px",
+                },
+                textAlign: "center",
+              }}
+            >
               Item: {data.item} <br></br>
               Collection: {data.collection}
             </Typography>
@@ -86,20 +101,21 @@ const Feed = () => {
                 <CardMedia
                   component="img"
                   sx={{
-                    border: "1px solid",
+                    objectFit: "cover",
+                    border: "1px solid inherit",
                     height: {
-                      xl: "250px",
+                      xl: "300px",
                       lg: "200px",
-                      md: "325px",
-                      sm: "250px",
-                      xs: "100px",
+                      md: "400px",
+                      sm: "350px",
+                      xs: "300px",
                     },
                     width: {
                       xl: "200px",
-                      lg: "200px",
-                      md: "325px",
+                      lg: "160px",
+                      md: "300px",
                       sm: "250px",
-                      xs: "100px",
+                      xs: "200px",
                     },
                   }}
                   image={data.img}
@@ -113,18 +129,18 @@ const Feed = () => {
                     justifyContent: "center",
                     border: "1px solid",
                     height: {
-                      xl: "250px",
+                      xl: "300px",
                       lg: "200px",
-                      md: "325px",
-                      sm: "250px",
-                      xs: "100px",
+                      md: "400px",
+                      sm: "350px",
+                      xs: "300px",
                     },
                     width: {
                       xl: "200px",
-                      lg: "200px",
-                      md: "325px",
+                      lg: "180px",
+                      md: "300px",
                       sm: "250px",
-                      xs: "100px",
+                      xs: "200px",
                     },
                   }}
                 >

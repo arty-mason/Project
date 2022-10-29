@@ -12,7 +12,7 @@ const columns = [
   {
     field: "collection",
     headerName: "Collection name",
-    width: 300,
+    width: 250,
   },
   {
     field: "author",
@@ -42,15 +42,22 @@ const LatestItems = () => {
   return (
     <DataGrid
       sx={{
-        width: "1100px",
+        width: {
+          xl: "1200px",
+          lg: "1000px",
+          md: "800px",
+          sm: "550px",
+          xs: "300px",
+        },
         height: "400px",
       }}
+      scrollbarSize={10}
       autoHeight
       rows={rows}
       columns={columns}
-      pageSize={5}
       rowsPerPageOptions={[5]}
       checkboxSelection
+      density="comfortable"
       disableSelectionOnClick
       experimentalFeatures={{ newEditingApi: true }}
     />

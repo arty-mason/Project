@@ -103,13 +103,17 @@ const Header = (props) => {
             flexGrow: 1,
             display: { xs: "none", sm: "block" },
             textAlign: "center",
-            textDecoration: "none",
           }}
         >
           <Link to="/"> Home</Link>
         </Typography>
         {user?.displayName ? (
-          <Button color="inherit" onClick={handleLogout}>
+          <Button
+            onClick={handleLogout}
+            sx={{
+              color: theme.palette?.mode === "dark" ? "white" : "black",
+            }}
+          >
             Logout
           </Button>
         ) : (

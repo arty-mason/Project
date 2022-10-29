@@ -38,7 +38,7 @@ router.post("/",
 
     const collectionBody = req.body;
     const result = await collectionService.createColection(collectionBody);
-    res.send(result);
+    res.sendStatus(201).send(result);
   });
 
 router.get("/last", async (req, res) => {

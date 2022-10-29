@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import { TagCloud } from "react-tagcloud";
 
 const data = [
@@ -12,21 +11,17 @@ const data = [
 ];
 
 const Tags = () => (
-  <Box
-    sx={{
-      display: "flex",
-      justifyContent: "center",
+  <TagCloud
+    minSize={10}
+    maxSize={30}
+    tags={data}
+    randomSeed={500}
+    style={{
+      minWidth: "300px",
+      maxWidth: "600px",
+      textAlign: "center",
     }}
-  >
-    <TagCloud
-      minSize={12}
-      maxSize={35}
-      tags={data}
-      randomSeed={500}
-      style={{ width: 500, textAlign: "center" }}
-      onClick={(tag) => alert(`${tag.value} is clicked!`)}
-    />
-  </Box>
+  />
 );
 
 export default Tags;
