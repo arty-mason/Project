@@ -12,6 +12,7 @@ import CustomizedSwitches from "../config/ThemeSwitcher";
 import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../context/AuthContext";
 import { Button } from "@mui/material";
+import HomeIcon from "@mui/icons-material/Home";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -92,7 +93,12 @@ const Header = (props) => {
           aria-label="open drawer"
           sx={{ mr: 2 }}
         >
-          <MenuIcon />
+          <MenuIcon
+            sx={{
+              display: { sm: "none", xs: "block" },
+              color: theme.palette?.mode === "dark" ? "white" : "black",
+            }}
+          />
         </IconButton>
         <CustomizedSwitches toggleTheme={toggleTheme} />
         <Typography
@@ -105,7 +111,32 @@ const Header = (props) => {
             textAlign: "center",
           }}
         >
-          <Link to="/"> Home</Link>
+          <Button
+            variant="contained"
+            sx={{
+              border: `2px solid ${
+                theme.palette?.mode === "dark" ? "white" : "black"
+              }`,
+            }}
+          >
+            <HomeIcon />
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <Typography
+                sx={{
+                  color: theme.palette?.mode === "dark" ? "white" : "black",
+                  fontWeight: 600,
+                  mt: "1px",
+                }}
+              >
+                Home
+              </Typography>
+            </Link>
+          </Button>
         </Typography>
         {user?.displayName ? (
           <Button
@@ -119,7 +150,11 @@ const Header = (props) => {
         ) : (
           <Link to="/signin" />
         )}
-        <Search>
+        <Search
+          sx={{
+            color: theme.palette?.mode === "dark" ? "white" : "black",
+          }}
+        >
           <SearchIconWrapper>
             <SearchIcon />
           </SearchIconWrapper>

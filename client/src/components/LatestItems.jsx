@@ -2,6 +2,7 @@ import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 
 import mockData from "../services/collection-data";
+import { Typography } from "@mui/material";
 
 const columns = [
   {
@@ -40,27 +41,47 @@ const rows = mockData.map((data) => {
 
 const LatestItems = () => {
   return (
-    <DataGrid
-      sx={{
-        width: {
-          xl: "1200px",
-          lg: "1000px",
-          md: "800px",
-          sm: "550px",
-          xs: "300px",
-        },
-        height: "400px",
-      }}
-      scrollbarSize={10}
-      autoHeight
-      rows={rows}
-      columns={columns}
-      rowsPerPageOptions={[5]}
-      checkboxSelection
-      density="comfortable"
-      disableSelectionOnClick
-      experimentalFeatures={{ newEditingApi: true }}
-    />
+    <>
+      <Typography
+        component="h3"
+        textAlign="center"
+        color="primary"
+        sx={{
+          fontSize: {
+            xl: "50px",
+            lg: "45px",
+            md: "40px",
+            sm: "30px",
+            xs: "22px",
+          },
+          fontWeight: "800",
+          mb: "20px",
+        }}
+      >
+        Recently added items
+      </Typography>
+      <DataGrid
+        sx={{
+          width: {
+            xl: "1200px",
+            lg: "1000px",
+            md: "800px",
+            sm: "550px",
+            xs: "300px",
+          },
+          height: "400px",
+        }}
+        scrollbarSize={10}
+        autoHeight
+        rows={rows}
+        columns={columns}
+        rowsPerPageOptions={[5]}
+        checkboxSelection
+        density="comfortable"
+        disableSelectionOnClick
+        experimentalFeatures={{ newEditingApi: true }}
+      />
+    </>
   );
 };
 
