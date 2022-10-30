@@ -79,7 +79,7 @@ const Header = (props) => {
         flexGrow: 1,
         top: "0",
         left: "0",
-        position: "fixed",
+        position: "sticky",
         width: "100%",
         zIndex: 10,
         backgroundColor: theme.palette.primary.main,
@@ -108,52 +108,74 @@ const Header = (props) => {
           </IconButton>
           <CustomizedSwitches toggleTheme={toggleTheme} />
         </Box>
-
-        <Button
-          variant="contained"
-          sx={{
-            display: { xs: "none", sm: "flex" },
-            justifyContent: "center",
-            border: `2px solid ${
-              theme.palette?.mode === "dark" ? "black" : "white"
-            }`,
-          }}
-        >
-          <HomeIcon />
-          <Link
-            to="/"
-            style={{
-              textDecoration: "none",
+        {user?.displayName ? null : (
+          <Button
+            variant="contained"
+            sx={{
+              display: { xs: "none", sm: "flex" },
+              justifyContent: "center",
+              border: `2px solid ${
+                theme.palette?.mode === "dark" ? "black" : "white"
+              }`,
             }}
           >
-            <Typography
-              noWrap
-              component="div"
-              sx={{
-                color: theme.palette?.mode === "dark" ? "black" : "white",
-                textAlign: "center",
-                fontWeight: 600,
-                mt: "1px",
+            <HomeIcon />
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
               }}
             >
-              Home
-            </Typography>
-          </Link>
-        </Button>
+              <Typography
+                noWrap
+                component="div"
+                sx={{
+                  color: theme.palette?.mode === "dark" ? "black" : "white",
+                  textAlign: "center",
+                  fontWeight: 600,
+                  mt: "1px",
+                }}
+              >
+                Home
+              </Typography>
+            </Link>
+          </Button>
+        )}
         <Box
           sx={{
             display: "flex",
           }}
         >
           {user?.displayName ? (
-            <Button
-              onClick={handleLogout}
-              sx={{
-                color: theme.palette?.mode === "dark" ? "black" : "white",
-              }}
-            >
-              Logout
-            </Button>
+            <Box>
+              <Button
+                variant="contained"
+                sx={{
+                  border: `2px solid ${
+                    theme.palette?.mode === "dark" ? "black" : "white"
+                  }`,
+                }}
+              >
+                <Link to="/user" style={{ textDecoration: "none" }}>
+                  <Typography
+                    sx={{
+                      color: theme.palette?.mode === "dark" ? "black" : "white",
+                      fontWeight: 600,
+                    }}
+                  >
+                    My account
+                  </Typography>
+                </Link>
+              </Button>
+              <Button
+                onClick={handleLogout}
+                sx={{
+                  color: theme.palette?.mode === "dark" ? "black" : "white",
+                }}
+              >
+                Logout
+              </Button>
+            </Box>
           ) : (
             <Link to="/signin" />
           )}

@@ -23,8 +23,7 @@ const User = () => {
   return (
     <Box
       sx={{
-        height: "100%",
-        width: "100%",
+        height: "93.2vh",
       }}
     >
       <Typography sx={{ color: "black" }}>
