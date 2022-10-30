@@ -102,7 +102,7 @@ const Feed = () => {
                   component="img"
                   sx={{
                     objectFit: "cover",
-                    border: "1px solid inherit",
+                    border: "1px solid",
                     height: {
                       xl: "300px",
                       lg: "200px",

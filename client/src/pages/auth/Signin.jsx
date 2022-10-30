@@ -75,8 +75,8 @@ const Signin = () => {
           color="primary"
           sx={{ textAlign: "center" }}
         >
-          Don't have an account yet?{" "}
-          <Link to="/signup" style={{ textDecoration: "none" }}>
+          Don't have an account yet? &nbsp;
+          <Link to="/signup" style={{ textDecoration: "none", color: "green" }}>
             Sign up
           </Link>
         </Typography>

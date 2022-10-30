@@ -108,38 +108,43 @@ const Header = (props) => {
           </IconButton>
           <CustomizedSwitches toggleTheme={toggleTheme} />
         </Box>
-        <Box>
-          <Button
-            variant="contained"
-            sx={{
-              display: { xs: "none", sm: "flex" },
-              justifyContent: "center",
-              border: `2px solid ${
-                theme.palette?.mode === "dark" ? "black" : "white"
-              }`,
+
+        <Button
+          variant="contained"
+          sx={{
+            display: { xs: "none", sm: "flex" },
+            justifyContent: "center",
+            border: `2px solid ${
+              theme.palette?.mode === "dark" ? "black" : "white"
+            }`,
+          }}
+        >
+          <HomeIcon />
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
             }}
           >
-            <HomeIcon />
-            <Link
-              to="/"
-              style={{
-                textDecoration: "none",
+            <Typography
+              noWrap
+              component="div"
+              sx={{
+                color: theme.palette?.mode === "dark" ? "black" : "white",
+                textAlign: "center",
+                fontWeight: 600,
+                mt: "1px",
               }}
             >
-              <Typography
-                noWrap
-                component="div"
-                sx={{
-                  color: theme.palette?.mode === "dark" ? "black" : "white",
-                  textAlign: "center",
-                  fontWeight: 600,
-                  mt: "1px",
-                }}
-              >
-                Home
-              </Typography>
-            </Link>
-          </Button>
+              Home
+            </Typography>
+          </Link>
+        </Button>
+        <Box
+          sx={{
+            display: "flex",
+          }}
+        >
           {user?.displayName ? (
             <Button
               onClick={handleLogout}
@@ -149,21 +154,24 @@ const Header = (props) => {
             >
               Logout
             </Button>
-          ) : null}
+          ) : (
+            <Link to="/signin" />
+          )}
+
+          <Search
+            sx={{
+              color: theme.palette?.mode === "dark" ? "black" : "white",
+            }}
+          >
+            <SearchIconWrapper>
+              <SearchIcon />
+            </SearchIconWrapper>
+            <StyledInputBase
+              placeholder="Search"
+              inputProps={{ "aria-label": "search" }}
+            />
+          </Search>
         </Box>
-        <Search
-          sx={{
-            color: theme.palette?.mode === "dark" ? "black" : "white",
-          }}
-        >
-          <SearchIconWrapper>
-            <SearchIcon />
-          </SearchIconWrapper>
-          <StyledInputBase
-            placeholder="Search"
-            inputProps={{ "aria-label": "search" }}
-          />
-        </Search>
       </Toolbar>
     </Box>
   );

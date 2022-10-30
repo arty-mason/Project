@@ -60,7 +60,7 @@ const Signup = () => {
           sx={{ textAlign: "center" }}
         >
           Already have an account?{" "}
-          <Link to="/signin" style={{ textDecoration: "none" }}>
+          <Link to="/signin" style={{ textDecoration: "none", color: "green" }}>
             Sign in
           </Link>
         </Typography>

@@ -27,7 +27,9 @@ const User = () => {
         width: "100%",
       }}
     >
-      <Typography>User: {user && user.email}</Typography>
+      <Typography sx={{ color: "black" }}>
+        User: {user && user.email}
+      </Typography>
       <Button onClick={handleLogout}>Logout</Button>
     </Box>
   );

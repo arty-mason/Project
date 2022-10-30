@@ -17,6 +17,7 @@ import User from "./pages/user/User"
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 
+
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
@@ -32,15 +33,6 @@ function App() {
         <Header toggleTheme={toggleTheme} />
         <Wrapper>
           <Routes>
-            <Route path="/signin" element={<Signin />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route
-              path="/admin"
-              element={
-                <ProtectedRoute>
-                  <Admin />
-                </ProtectedRoute>
-              } />
             <Route
               path="/user"
               element={
@@ -48,7 +40,16 @@ function App() {
                   <User />
                 </ProtectedRoute>
               } />
+            <Route
+              path="/admin"
+              element={
+                <ProtectedRoute>
+                  <Admin />
+                </ProtectedRoute>
+              } />
             <Route path="*" element={<Home />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
         </Wrapper>
       </AuthContextProvider>

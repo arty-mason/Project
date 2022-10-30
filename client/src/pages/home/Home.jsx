@@ -52,7 +52,7 @@ const Home = () => {
           }}
         >
           Want to create your own collection on our website? &nbsp;
-          <Link to="/signup" style={{ textDecoration: "none" }}>
+          <Link to="/signup" style={{ textDecoration: "none", color: "green" }}>
             Sign up
           </Link>
         </Typography>
@@ -73,7 +73,7 @@ const Home = () => {
           }}
         >
           Already have an account? &nbsp;
-          <Link to="/signin" style={{ textDecoration: "none" }}>
+          <Link to="/signin" style={{ textDecoration: "none", color: "green" }}>
             Sign in
           </Link>
         </Typography>
