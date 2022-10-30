@@ -60,7 +60,7 @@ export default function CustomizedSwitches(props) {
     <FormGroup>
       <FormControlLabel
         sx={{
-          color: theme.palette?.mode === "dark" ? "white" : "black",
+          color: theme.palette?.mode === "dark" ? "black" : "white",
         }}
         control={<MaterialUISwitch sx={{ m: 1 }} onChange={toggleTheme} />}
         label={

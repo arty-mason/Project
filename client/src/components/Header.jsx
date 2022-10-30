@@ -85,37 +85,37 @@ const Header = (props) => {
         backgroundColor: theme.palette.primary.main,
       }}
     >
-      <Toolbar>
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="open drawer"
-          sx={{ mr: 2 }}
-        >
-          <MenuIcon
-            sx={{
-              display: { sm: "none", xs: "block" },
-              color: theme.palette?.mode === "dark" ? "white" : "black",
-            }}
-          />
-        </IconButton>
-        <CustomizedSwitches toggleTheme={toggleTheme} />
-        <Typography
-          variant="h6"
-          noWrap
-          component="div"
-          sx={{
-            flexGrow: 1,
-            display: { xs: "none", sm: "block" },
-            textAlign: "center",
-          }}
-        >
+      <Toolbar
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
+        <Box display="flex">
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="open drawer"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon
+              color="white"
+              sx={{
+                display: { sm: "none", xs: "block" },
+              }}
+            />
+          </IconButton>
+          <CustomizedSwitches toggleTheme={toggleTheme} />
+        </Box>
+        <Box>
           <Button
             variant="contained"
             sx={{
+              display: { xs: "none", sm: "flex" },
+              justifyContent: "center",
               border: `2px solid ${
-                theme.palette?.mode === "dark" ? "white" : "black"
+                theme.palette?.mode === "dark" ? "black" : "white"
               }`,
             }}
           >
@@ -127,8 +127,11 @@ const Header = (props) => {
               }}
             >
               <Typography
+                noWrap
+                component="div"
                 sx={{
-                  color: theme.palette?.mode === "dark" ? "white" : "black",
+                  color: theme.palette?.mode === "dark" ? "black" : "white",
+                  textAlign: "center",
                   fontWeight: 600,
                   mt: "1px",
                 }}
@@ -137,22 +140,20 @@ const Header = (props) => {
               </Typography>
             </Link>
           </Button>
-        </Typography>
-        {user?.displayName ? (
-          <Button
-            onClick={handleLogout}
-            sx={{
-              color: theme.palette?.mode === "dark" ? "white" : "black",
-            }}
-          >
-            Logout
-          </Button>
-        ) : (
-          <Link to="/signin" />
-        )}
+          {user?.displayName ? (
+            <Button
+              onClick={handleLogout}
+              sx={{
+                color: theme.palette?.mode === "dark" ? "black" : "white",
+              }}
+            >
+              Logout
+            </Button>
+          ) : null}
+        </Box>
         <Search
           sx={{
-            color: theme.palette?.mode === "dark" ? "white" : "black",
+            color: theme.palette?.mode === "dark" ? "black" : "white",
           }}
         >
           <SearchIconWrapper>

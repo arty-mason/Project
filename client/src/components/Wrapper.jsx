@@ -14,7 +14,7 @@ const Wrapper = (props) => {
         height: "100%",
         m: 0,
         justifyContent: "space-between",
-        backgroundColor: theme.palette?.mode === "dark" ? "#607d8b" : "#eceff1",
+        backgroundColor: theme.palette?.mode === "dark" ? "#212121" : "#eeeeee",
       }}
     >
       {children}
