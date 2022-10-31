@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
 
 const columns = [
@@ -58,6 +58,7 @@ export default function DataTable() {
       pageSize={5}
       rowsPerPageOptions={[5]}
       checkboxSelection
+      autoHeight
     />
   );
 }

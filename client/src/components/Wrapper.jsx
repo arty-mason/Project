@@ -14,6 +14,7 @@ const Wrapper = (props) => {
         height: "100%",
         m: 0,
         justifyContent: "space-between",
+        alignItems: "center",
         backgroundColor: theme.palette?.mode === "dark" ? "#212121" : "#eeeeee",
       }}
     >
