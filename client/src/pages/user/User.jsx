@@ -1,6 +1,4 @@
-import React /*, { useEffect useState } */ from "react";
-
-/* import axios from "axios"; */
+import React from "react";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -10,19 +8,6 @@ import { useTheme } from "@mui/material/styles";
 import DataTable from "./Table";
 
 const User = () => {
-  /* const [data, setData] = useState([]);
-
-  const loadData = async () => {
-    const response = await axios.get(
-      `http://localhost:5001/collections-lib/europe-central2/app/collections/last`
-    );
-    setData(response.data);
-  };
- */
-  /*   useEffect(() => {
-    loadData();
-  }, []); */
-
   const theme = useTheme();
 
   return (
