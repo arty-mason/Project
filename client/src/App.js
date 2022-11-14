@@ -5,15 +5,11 @@ import { ThemeProvider } from '@mui/material/styles';
 import { lightTheme, darkTheme } from "./config/theme"
 import { AuthContextProvider } from './context/AuthContext';
 import ProtectedRoute from "./components/ProtectedRoute"
-
-/// PAGES
 import Signin from "./pages/auth/Signin";
 import Signup from "./pages/auth/Signup";
 import Home from "./pages/home/Home";
 import Admin from "./pages/admin/Admin"
 import User from "./pages/user/User"
-
-/// STATIC COMPONENTS
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 

@@ -8,6 +8,11 @@ const createColection = async (colectionData) => {
 
 const getCollectionById = async (collectionId) => {
   const model = await CollectionModel.findOne({ _id: collectionId });
+
+  if (!model) {
+    throw new Error('Collection not found with id');
+  }
+
   return model.toObject();
 };
 
@@ -16,6 +21,7 @@ const getCollectionsList = async (from, to) => {
     .sort({ createdAt: -1 })
     .limit(to - from)
     .skip(from);
+
   const objModels = models.map((model) => model.toObject());
 
   return objModels;

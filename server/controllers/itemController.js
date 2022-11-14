@@ -1,11 +1,13 @@
 const express = require("express");
 const router = express.Router();
 
-const { createItem,
+const {
+  createItem,
   getItemById,
   getItemsList,
   updateItemById,
-  removeItemById, } = require("../services/itemService");
+  removeItemById,
+} = require("../services/itemService");
 
 router.get("/last", async (req, res) => {
   const from = +req.query.from || 0;

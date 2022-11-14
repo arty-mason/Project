@@ -2,7 +2,6 @@ import item1 from "../img/item/item1.png"
 import item2 from "../img/item/item2.webp"
 import item3 from "../img/item/item3.jpg"
 import item5 from "../img/item/item5.jpeg"
-
 import ava1 from "../img/ava/ava1.webp"
 import ava2 from "../img/ava/ava2.webp"
 import ava3 from "../img/ava/ava3.webp"

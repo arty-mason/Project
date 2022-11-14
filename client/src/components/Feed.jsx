@@ -1,7 +1,5 @@
 import React from "react";
-
 import { Favorite, FavoriteBorder, Share } from "@mui/icons-material";
-
 import {
   Avatar,
   Box,
@@ -14,7 +12,6 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
-
 import { useTheme } from "@mui/material/styles";
 
 import mockData from "../services/collection-data";

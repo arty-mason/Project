@@ -1,16 +1,12 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { GoogleButton } from "react-google-button";
-
-import { useUserAuth } from "../../context/AuthContext";
-
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
+import { useUserAuth } from "../../context/AuthContext";
 import { Input } from "../../services/authInput";
-import { useEffect } from "react";
 
 const Signin = () => {
   const [login, setLogin] = useState("");

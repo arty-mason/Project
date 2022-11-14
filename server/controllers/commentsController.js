@@ -1,7 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const { createComment, getCommentByid, getCommentList, removeCommentById } = require("../services/commentsService");
+const {
+  createComment,
+  getCommentByid,
+  getCommentList,
+  removeCommentById
+} = require("../services/commentsService");
 
 router.get("/last", async (req, res) => {
   const from = +req.query.from || 0;

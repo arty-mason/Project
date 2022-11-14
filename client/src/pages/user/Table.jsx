@@ -74,13 +74,11 @@ const DataTable = (theme) => {
       }}
     >
       <Box sx={{ display: "flex", justifyContent: "space-around" }}>
-        {rows.map((row) => {
-          return (
-            <TableHeader key={row.id} variant="h6" color="primary">
-              {row.label}
-            </TableHeader>
-          );
-        })}
+        {rows.map((row) => (
+          <TableHeader key={row.id} variant="h6" color="primary">
+            {row.label}
+          </TableHeader>
+        ))}
       </Box>
       <Box>
         {data.map((item) => {

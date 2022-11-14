@@ -8,11 +8,19 @@ import {
   GoogleAuthProvider, signInWithPopup,
   // signInWithRedirect,
 } from "firebase/auth"
-
 import { auth } from "../firebase"
 
 const UserContext = createContext();
 
+/* const UserAPI = {
+  Queries: {
+    createUser: (request, options = {}) => createUserWithEmailAndPassword(auth, email, password),
+    signIn: (type) => { }
+  },
+}; 
+
+UserAPI.Queries.createUser();
+*/
 export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState({});
 

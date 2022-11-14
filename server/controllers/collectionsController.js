@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
-const { check, validationResult } = require('express-validator')
+const { check, validationResult } = require('express-validator');
 
 const collectionService = require("../services/collectionsService");
 
@@ -27,7 +26,8 @@ router.post("/",
       .isArray(1, 10)
       .withMessage("Collection tags must be an array of 5 and a maximum of 50 strings and cannot be empty"),
   ],
-  async (req, res) => {
+
+  async (req, res, next) => {
     const errors = validationResult(req);
     console.log(errors);
     if (!errors.isEmpty()) {
@@ -35,10 +35,9 @@ router.post("/",
         errors: errors.array()
       });
     };
-
-    const collectionBody = req.body;
-    const result = await collectionService.createColection(collectionBody);
+    const result = await collectionService.createColection(req.body);
     res.sendStatus(201).send(result);
+    next();
   });
 
 router.get("/last", async (req, res) => {

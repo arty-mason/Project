@@ -1,8 +1,8 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
+import { Typography } from "@mui/material";
 
 import mockData from "../services/collection-data";
-import { Typography } from "@mui/material";
 
 const columns = [
   {

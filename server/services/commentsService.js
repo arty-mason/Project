@@ -26,5 +26,8 @@ const removeCommentById = async (commentId) => {
 };
 
 module.exports = {
-  createComment, getCommentByid, getCommentList, removeCommentById
+  createComment,
+  getCommentByid,
+  getCommentList,
+  removeCommentById
 };

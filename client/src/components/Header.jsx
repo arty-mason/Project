@@ -1,5 +1,7 @@
 import React from "react";
-import { styled, alpha } from "@mui/material/styles";
+import { Link, useNavigate } from "react-router-dom";
+import { styled, alpha, useTheme } from "@mui/material/styles";
+import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
@@ -7,12 +9,10 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import { useTheme } from "@mui/material/styles";
-import CustomizedSwitches from "../config/ThemeSwitcher";
-import { Link, useNavigate } from "react-router-dom";
-import { useUserAuth } from "../context/AuthContext";
-import { Button } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
+
+import CustomizedSwitches from "../config/ThemeSwitcher";
+import { useUserAuth } from "../context/AuthContext";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",

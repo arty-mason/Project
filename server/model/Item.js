@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-
 const Schema = mongoose.Schema;
 
 const customFieldSchema = new Schema({
@@ -13,7 +12,7 @@ const customFieldSchema = new Schema({
   },
 });
 
-const itemSchema = new Schema(
+const ItemSchema = new Schema(
   {
     collectionId: {
       type: Schema.Types.ObjectId,
@@ -41,4 +40,4 @@ const itemSchema = new Schema(
   },
 );
 
-module.exports = mongoose.model("Item", itemSchema);
+module.exports = mongoose.model("Item", ItemSchema);

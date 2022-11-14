@@ -1,9 +1,7 @@
 import React from "react";
-
+import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-
-import { useTheme } from "@mui/material/styles";
 
 import DataTable from "./Table";
 
